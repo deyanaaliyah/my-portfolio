@@ -52,7 +52,7 @@ export default function Preset() {
   };
 
   const systemPanel = [
-    <p key="react">React.js</p>,
+    <p key="react">React.js + vite</p>,
     <p key="theme">{theme === "dark" ? "Dark mode" : "Light mode"}</p>,
     <p key="date">
       {t("preset.today", {
@@ -73,7 +73,7 @@ export default function Preset() {
   return (
     <div className="Preset">
       <h2 className="Preset__header">
-        {t("preset.bootOptions", "Boot Options")}
+        {t("preset.bootOptions")}
       </h2>
 
       <div className="Preset__menu">
