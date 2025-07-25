@@ -1,5 +1,6 @@
 {
   "preset": {
+    "bootOptions": "boot indstillinger",
     "system": "stystem",
     "tools": "tools",
     "today": "Today is {{object}}"
