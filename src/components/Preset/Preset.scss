@@ -1,0 +1,70 @@
+@use "../../styles" as *;
+
+.Preset {
+  max-width: 600px;
+  margin: auto;
+  background-color: $red;
+  color: $black;
+  font-family: monospace;
+  text-transform: lowercase;
+  padding: 1rem;
+
+  &__header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+
+    &__left {
+      cursor: pointer;
+    }
+
+    &__right {
+      width: 70%;
+    }
+
+    &__left,
+    &__right {
+      display: flex;
+      flex-direction: column;
+
+      &__active {
+        background: $black;
+        color: $red;
+      }
+
+      &__item {
+        cursor: pointer;
+        line-height: 32px;
+        padding: 0 0.5rem;
+      }
+    }
+  }
+
+  &__controls {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+
+    button {
+      font-family: inherit;
+      color: $black;
+      background: none;
+      text-transform: lowercase;
+      border: 0.5px solid $black;
+      height: 32px;
+      cursor: pointer;
+      width: 54px;
+
+      &:hover {
+        color: $red;
+        background: $black;
+      }
+    }
+  }
+}

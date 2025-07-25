@@ -1,0 +1,15 @@
+@use "./styles" as *;
+
+body {
+  @include font-tiktok();
+}
+
+[data-theme="dark"] {
+  background: $black;
+  color: $white;
+}
+
+[data-theme="light"] {
+  background: $white;
+  color: $black;
+}

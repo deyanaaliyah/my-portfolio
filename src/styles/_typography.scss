@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Righteous&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap");
+
+@mixin font-tiktok {
+  font-family: "font-tiktok Sans", sans-serif;
+}
+
+@mixin text-primary-header {
+  @include font-tiktok();
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+@mixin text-secondary-header {
+  @include font-tiktok();
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+// Body Text
+@mixin text-primary-text {
+  @include font-tiktok();
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+@mixin text-secondary-text {
+  @include font-tiktok();
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+// Small Text
+@mixin text-primary-small-text {
+  @include font-tiktok();
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+// Cases
+@mixin text-uppercase {
+  text-transform: uppercase;
+}
+@mixin text-lowercase {
+  text-transform: lowercase;
+}
+@mixin text-capitalize {
+  text-transform: capitalize;
+}
+
+// Utilities
+@mixin text-no-decoration {
+  text-decoration: none;
+  list-style-type: none;
+}

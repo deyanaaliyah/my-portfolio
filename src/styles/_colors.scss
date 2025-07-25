@@ -1,0 +1,31 @@
+// Base colors
+$darkest: #222;
+$black: #333;
+$white: #f3f3f3;
+$red: #ff4500;
+
+// Light mode theme
+$light: (
+  background: $white,
+  text: $black,
+);
+
+// Dark mode theme
+$dark: (
+  background: $black,
+  text: $white,
+);
+
+// Mixin to use theme colors
+@mixin theme-color($property, $key) {
+  // Light mode
+  #{"html[data-theme='light']"} & {
+    #{$property}: map-get($light, $key);
+    background: $white;
+  }
+  // Dark mode
+  #{"html[data-theme='dark']"} & {
+    #{$property}: map-get($dark, $key);
+    background: $black;
+  }
+}
