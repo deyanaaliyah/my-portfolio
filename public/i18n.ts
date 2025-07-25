@@ -12,6 +12,10 @@ i18n
     fallbackLng: "en",
     debug: true,
 
+    backend: {
+      loadPath: `${import.meta.env.BASE_URL}locales/{{lng}}/{{ns}}.json`,
+    },
+
     interpolation: {
       escapeValue: false,
     },

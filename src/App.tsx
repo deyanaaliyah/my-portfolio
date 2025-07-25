@@ -8,7 +8,6 @@ function App() {
     <div className="App">
       <NavigationBar />
       <Preset />
-      <p>Bonjour</p>
     </div>
   );
 }
