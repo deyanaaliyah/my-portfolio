@@ -1,0 +1,7 @@
+{
+  "preset": {
+    "system": "stystem",
+    "tools": "tools",
+    "today": "Today is {{object}}"
+  }
+}
