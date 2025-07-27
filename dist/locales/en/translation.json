@@ -1,8 +1,32 @@
 {
+  "navigation": [
+    { "title": "Home", "route": "/" },
+    { "title": "Projects", "route": "/projects" },
+    { "title": "About", "route": "/about" }
+  ],
   "preset": {
     "bootOptions": "boot options",
     "system": "stystem",
     "tools": "tools",
-    "today": "Today is {{object}}"
-  }
+    "today": "Today is {{object}}",
+    "exit": "Exit"
+  },
+  "home": {
+    "title": "Hi,  I’m Deyan - a full stack developer who turns ideas into polished digital products",
+    "tagline": "From GO backend and React UIs to Swift-driven apps, I write code that feels fast, reliable and I experiment different practices and designs.",
+    "seeking": "Looking for a new adventure",
+    "outro": "and way more",
+    "traits": {
+      "title": "Design is just as important as the code",
+      "quote": "We spend so much time writing beautiful code and top-notch algorithms, the UI deserves just as much respect."
+    },
+    "hobby": {
+      "intro": "What do I do in my free time?",
+      "title": ["Obviously", "I have other hobbies too"],
+      "subtitle": "And they come in handy",
+      "cph": "Cph",
+      "hobbies": ["Aviation", "Music", "Hiking"]
+    }
+  },
+  "preferences": "preferences"
 }
