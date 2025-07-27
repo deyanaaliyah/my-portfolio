@@ -1,31 +1,61 @@
 // Base colors
-$darkest: #222;
+$charcoal: #222;
 $black: #333;
 $white: #f3f3f3;
-$red: #ff4500;
+$whitest: #ffffff;
+$grey: #999999;
+$watermelon: #fd555a;
+$red: #e83426;
+$lemon-yellow: #ffe631;
+$amber: #ffbe00;
+$pumpkin-orange: #ff9733;
+$sky-blue: #10a7ec;
+$medium-turqoise: #46c0ac;
+$emerald: #1eb856;
+$creme: #f9eddf;
 
-// Light mode theme
-$light: (
-  background: $white,
-  text: $black,
-);
+[data-theme="dark"] {
+  background: $black;
+  color: $white;
+  --creme: #{$creme};
+  --default: #{$white};
+}
 
-// Dark mode theme
-$dark: (
-  background: $black,
-  text: $white,
-);
+[data-theme="light"] {
+  background: $white;
+  color: $black;
+  transition: all 0.8s ease;
+  --creme: #{$grey};
+  --default: #{$black};
+}
 
-// Mixin to use theme colors
-@mixin theme-color($property, $key) {
-  // Light mode
-  #{"html[data-theme='light']"} & {
-    #{$property}: map-get($light, $key);
-    background: $white;
-  }
-  // Dark mode
-  #{"html[data-theme='dark']"} & {
-    #{$property}: map-get($dark, $key);
-    background: $black;
+@mixin glass() {
+  border-radius: 80px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(2px) saturate(160%);
+  -webkit-backdrop-filter: blur(2px) saturate(160%);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15),
+    inset 0 1px 1px rgba(255, 255, 255, 0.3),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.05),
+    inset 0 0 8px rgba(255, 255, 255, 0.08);
+
+  transition: all 0.4s ease;
+
+  &::after {
+    content: "";
+    border-radius: 80px;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.07),
+      rgba(255, 255, 255, 0.03)
+    );
+    mix-blend-mode: screen;
+    pointer-events: none;
+    z-index: 1;
   }
 }

@@ -1,15 +1,30 @@
 @use "./styles" as *;
 
+html,
 body {
-  @include font-tiktok();
+  height: 100%;
+  margin: 0;
+  @include font-futura();
+  font-weight: 500;
 }
 
-[data-theme="dark"] {
-  background: $black;
-  color: $white;
+a {
+  @include text-no-decoration;
+  color: inherit;
 }
 
-[data-theme="light"] {
-  background: $white;
+::selection {
+  background: $lemon-yellow;
   color: $black;
 }
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+

@@ -1,10 +1,37 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
-import '../public/i18n.ts';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
+import "../public/i18n";
+import { setLanguage, setTheme } from "./hooks";
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+setLanguage();
+setTheme();
+
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
+);
+
+const initializeApp = async () => {
+  root.render(
+    <React.StrictMode>
+      <BrowserRouter basename="/my-portfolio/">
+        <App />
+      </BrowserRouter>
+    </React.StrictMode>
+  );
+};
+
+// Vis midlertidig loading mens async initialisering kører
+root.render(<div>Loading application...</div>);
+
+initializeApp().catch((error) => {
+  console.error("Failed during app initialization:", error);
+  root.render(
+    <React.StrictMode>
+      <BrowserRouter basename="/my-portfolio/">
+        <App />
+      </BrowserRouter>
+    </React.StrictMode>
+  );
+});

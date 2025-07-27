@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@mixin font-babas-neue() {
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+}
+
+@mixin font-auralith() {
+  font-family: "Auralith", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Auralith.ttf") format("tff"),
+    url("../fonts/AuralithItalic.ttf") format("tff");
+}
+
+@mixin font-burgie() {
+  font-family: "Burgie";
+  font-style: normal;
+  src: url("../fonts/BurgieBlack.ttf") format("tff"),
+    url("../fonts/BurgieDemibold.ttf") format("tff"),
+    url("../fonts/BurgieExtrabold.ttf") format("tff"),
+    url("../fonts/BurgieExtralight.ttf") format("tff"),
+    url("../fonts/BurgieHeavy.ttf") format("tff"),
+    url("../fonts/BurgieLight.ttf") format("tff"),
+    url("../fonts/BurgieMedium.ttf") format("tff"),
+    url("../fonts/BurgieNormal.ttf") format("tff"),
+    url("../fonts/BurgieMedium.ttf") format("tff"),
+    url("../fonts/BurgieRegular.ttf") format("tff"),
+    url("../fonts/BurgieSemibold.ttf") format("tff"),
+    url("../fonts/BurgieThin.ttf") format("tff"),
+    url("../fonts/BurgieUltraBold.ttf") format("tff"),
+    url("../fonts/BurgieUltralight.ttf") format("tff");
+}
+
+@mixin font-futura() {
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Futura Bold Italic.ttf") format("tff"),
+    url("../fonts/Futura Bold.ttf") format("tff"),
+    url("../fonts/Futura Book.ttf") format("tff"),
+    url("../fonts/Futura Condensed.ttf") format("tff"),
+    url("../fonts/Futura Heavy Oblique.ttf") format("tff"),
+    url("../fonts/Futura Heavy.ttf") format("tff"),
+    url("../fonts/Futura Light.ttf") format("tff"),
+    url("../fonts/Futura Medium.ttf") format("tff"),
+    url("../fonts/Futura Round Bold.ttf") format("tff"),
+    url("../fonts/Futura Round Demi Italic.ttf") format("tff"),
+    url("../fonts/Futura Round Demi.ttf") format("tff"),
+    url("../fonts/Futura Round.ttf") format("tff");
+}
+
+@mixin font-glass-edge() {
+  font-family: "Glass Edge Demo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/GlassEdgeDemoRegular.ttf") format("tff");
+}
+
+@mixin font-qomarun() {
+  font-family: "Qomarun";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Qomarun.ttf") format("tff");
+}
+
+@mixin font-quartist() {
+  font-family: "Quartist";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Quartist.ttf") format("tff");
+}
+
+@mixin font-ragwort() {
+  font-family: "Ragwort";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Ragwort.ttf") format("tff");
+}
+
+@mixin font-romarie() {
+  font-family: "Romarie";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Romarie.ttf") format("tff");
+}
+
+@mixin font-vanzi() {
+  font-family: "Vanzi", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Vanzi.ttf") format("tff");
+}
+
+@mixin font-velvet-mango() {
+  font-family: "Velvet Mango", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/VelvetMango-Regular.ttf") format("tff");
+}
+
+@mixin font-moret() {
+  font-family: "Moret", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Moret-Bold.ttf") format("tff"),
+    url("../fonts/Moret-BoldOblique.ttf") format("tff"),
+    url("../fonts/Moret-Extrabold.ttf") format("tff"),
+    url("../fonts/Moret-ExtraboldOblique.ttf") format("tff"),
+    url("../fonts/Moret-Regular.ttf") format("tff"),
+    url("../fonts/Moret-RegularOblique.ttf") format("tff"),
+    url("../fonts/Moret-Semibold.ttf") format("tff"),
+    url("../fonts/Moret-SemiboldOblique.ttf") format("tff");
+}

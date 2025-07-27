@@ -1,8 +1,25 @@
 {
+  "navigation": [
+    { "title": "Hjem", "route": "/" },
+    { "title": "Projekter", "route": "/projects" },
+    { "title": "Om", "route": "/about" }
+  ],
   "preset": {
     "bootOptions": "boot indstillinger",
     "system": "stystem",
     "tools": "værktøjer",
-    "today": "I dag er det {{object}}"
-  }
+    "today": "I dag er det {{object}}",
+    "exit": "Afslut"
+  },
+  "home": {
+    "title": "Hej, navnet er Deyan - en full stack udvikler, der forvandler ideer til digitale produkter",
+    "tagline": "Fra GO backends og React UIs til Swift apps, skriver jeg kode der føles hurtig, reliable og jeg eksperimentere ofte med forskellige practices og designs",
+    "seeking": "Leder efter nye eventyr",
+    "outro": "og meget mere",
+    "traits": {
+      "title": "Design er vigtig  ligesom kode er",
+      "quote": "Vi bruger så lang tid på at skrive smuk kode og top notch algoritme – UI fortjener den samme respekt."
+    }
+  },
+  "preferences": "indstillinger"
 }

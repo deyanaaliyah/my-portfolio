@@ -1,13 +1,19 @@
-
 import "./App.scss";
-import { NavigationBar } from "./components";
-import Preset from "./components/Preset/Preset";
+import { NavigationBar, Footer } from "./components";
+import AppRoutes from "./routes/routes";
 
 function App() {
   return (
     <div className="App">
       <NavigationBar />
-      <Preset />
+
+      <main className="content">
+        <AppRoutes />
+      </main>
+
+      <footer className="Footer">
+        <Footer />
+      </footer>
     </div>
   );
 }

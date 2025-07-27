@@ -1,0 +1,12 @@
+@use "../../styles" as *;
+
+.SplitView {
+  &__content {
+    @include content;
+    @media screen and (min-width: $tablet-vertical) {
+      display: flex;
+      gap: 32px;
+      justify-items: space-between;
+    }
+  }
+}

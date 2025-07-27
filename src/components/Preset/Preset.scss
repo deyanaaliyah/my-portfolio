@@ -3,7 +3,7 @@
 .Preset {
   max-width: 600px;
   margin: auto;
-  background-color: $red;
+  background-color: $watermelon;
   color: $black;
   font-family: monospace;
   text-transform: lowercase;
@@ -35,7 +35,7 @@
 
       &__active {
         background: $black;
-        color: $red;
+        color: $watermelon;
       }
 
       &__item {
@@ -59,10 +59,10 @@
       border: 0.5px solid $black;
       height: 32px;
       cursor: pointer;
-      width: 54px;
+      min-width: 54px;
 
       &:hover {
-        color: $red;
+        color: $watermelon;
         background: $black;
       }
     }

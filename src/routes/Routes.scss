@@ -1,0 +1,9 @@
+@use "../styles" as *;
+
+.content {
+  margin-top: 79px;
+
+  @media (max-width: $tablet-vertical) {
+    margin-top: 100px;
+  }
+}

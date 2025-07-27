@@ -1,18 +1,29 @@
-import { useState } from "react";
+import { useEffect, useState, type FC } from "react";
 import { useTranslation } from "react-i18next";
 import "./Preset.scss";
+import type { IPreset } from "../../interfaces";
+import { getCurrentTheme, setLanguage } from "../../hooks";
 
-export default function Preset() {
-  const [theme, setTheme] = useState("dark");
+export const Preset: FC<IPreset> = ({ onClick }) => {
+  const [theme, setTheme] = useState("light");
   const [activePanel, setActivePanel] = useState("system");
   const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    const savedTheme = getCurrentTheme();
+    setTheme(savedTheme);
+    document.documentElement.setAttribute("data-theme", savedTheme);
+  }, []);
 
   const toggleTheme = (nextTheme: string) => {
     setTheme(nextTheme);
     document.documentElement.setAttribute("data-theme", nextTheme);
+    localStorage.setItem("theme", nextTheme);
+    window.dispatchEvent(new Event("theme-change"));
   };
 
   const changeLanguage = (lang: string) => {
+    setLanguage();
     i18n.changeLanguage(lang);
   };
 
@@ -73,7 +84,7 @@ export default function Preset() {
   return (
     <div className="Preset">
       <h2 className="Preset__header">
-        {t("preset.bootOptions")}
+        {t("preset.bootOptions", "Boot Options")}
       </h2>
 
       <div className="Preset__menu">
@@ -103,8 +114,8 @@ export default function Preset() {
       </div>
 
       <div className="Preset__controls">
-        <button>{t("preset.exit", "Exit")}</button>
+        <button onClick={onClick}>{t("preset.exit", "Exit")}</button>
       </div>
     </div>
   );
-}
+};

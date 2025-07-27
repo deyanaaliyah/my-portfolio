@@ -1,0 +1,89 @@
+@use "../../styles" as *;
+
+.TechFieldset {
+  padding: 6px;
+  position: relative;
+
+  @media screen and (min-width: $tablet-vertical) {
+    width: 50%;
+    max-width: 453px;
+  }
+
+  .TechFieldset__text {
+    overflow: hidden;
+    position: absolute;
+    width: 360px;
+    height: 22px;
+    top: calc(50% - 11px);
+    left: 50%;
+    transform: translateX(-50%);
+
+    &-wrapper {
+      display: flex;
+      gap: 0;
+      width: max-content;
+      animation: slide-left 20s linear infinite;
+    }
+
+  }
+
+  &__image-container {
+    padding: 10px;
+  }
+
+  &__side {
+    position: absolute;
+    color: $grey;
+    font-family: monospace;
+    font-size: 0.5rem;
+    white-space: nowrap;
+    letter-spacing: 0.2ch;
+
+    &--top {
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 94%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--right {
+      right: 0;
+      top: 370px;
+      transform: rotate(90deg);
+      transform-origin: right top;
+      width: 370px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--bottom {
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%) rotate(180deg);
+      width: 94%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--left {
+      left: 0;
+      top: 370px;
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 370px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

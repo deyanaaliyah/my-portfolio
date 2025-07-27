@@ -1,0 +1,267 @@
+@use "../../styles" as *;
+
+.Home {
+  &__intro {
+    margin-bottom: 32px;
+
+    &__title {
+      @include font-vanzi();
+      @include text-primary-header;
+      color: var(--creme);
+      text-transform: lowercase;
+      margin-bottom: 32px;
+    }
+
+    &__highlight1 {
+      @include font-velvet-mango();
+      color: $watermelon;
+      font-weight: 800;
+    }
+
+    &__highlight2 {
+      @include font-velvet-mango();
+      color: var(--creme);
+      font-style: italic;
+    }
+
+    &__tagline {
+      @include text-primary-text;
+      font-family: "Neue Haas Unica Pro", sans-serif;
+      color: var(--creme);
+      text-transform: lowercase;
+    }
+  }
+
+  &__hero {
+    background: $creme;
+    color: $red;
+
+    &__content {
+      @include content;
+
+      &__title {
+        @include text-primary-header;
+        @include font-velvet-mango();
+        font-size: 6.5cqmin;
+        line-height: 70px;
+        color: $creme;
+        background: $red;
+        border-radius: 15px;
+        padding: 64px 16px;
+        margin: 0 auto 32px auto;
+        text-align: center;
+      }
+
+      &__subtitle {
+        @include text-primary-header;
+        @include font-velvet-mango();
+        text-align: center;
+        font-size: 9cqmin;
+        font-weight: 800;
+      }
+
+      &__why {
+        display: flex;
+        gap: 16px;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        & h4 {
+          height: unset;
+          line-height: 0;
+        }
+
+        &__link-to-github {
+          width: 100%;
+          justify-content: end;
+          display: flex;
+          padding-right: 64px;
+
+          & a {
+            @include font-babas-neue();
+
+            word-spacing: -3.8px;
+            font-size: 20px;
+            height: 20px;
+            border-radius: 50%;
+            transform: skewX(-30deg) rotate(-7deg);
+            border: 2.5px solid $watermelon;
+            padding: 8px;
+          }
+        }
+
+        &__bullets {
+          @include text-primary-text;
+          width: 80px;
+          line-height: 18px;
+
+          & p {
+            margin: 0;
+            padding: 0;
+          }
+
+          & p:nth-child(1) {
+            font-weight: 800;
+          }
+        }
+      }
+    }
+  }
+
+  &__traits {
+    background: $charcoal;
+    color: $white;
+
+    &__content {
+      @include content;
+      overflow: hidden;
+      padding: 64px 0;
+      text-align: center;
+      text-transform: uppercase;
+
+      & h3 {
+        font-size: 74px;
+        margin: 16px auto;
+      }
+
+      & p {
+        @include font-moret();
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin: auto;
+
+        @media (min-width: $tablet-vertical) {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  &__hobbies {
+    background: $black;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    &__content {
+      @include content;
+      padding-bottom: 0;
+
+      & p {
+        @include font-babas-neue();
+        letter-spacing: 0.7px;
+        color: $grey;
+      }
+
+      &__title {
+        display: flex;
+
+        & h3 {
+          @include font-qomarun();
+
+          & span {
+            letter-spacing: -5px;
+            color: $watermelon;
+            font-style: italic;
+          }
+
+          font-size: 80px;
+          line-height: 120%;
+          width: 80%;
+          margin: 0;
+        }
+
+        & h4 {
+          @include font-babas-neue();
+          font-size: 20px;
+          letter-spacing: 0.7px;
+          margin-top: 0;
+          color: $white;
+        }
+
+        & p {
+          @include font-qomarun();
+          text-align: right;
+          font-size: 60px;
+          line-height: 120%;
+          margin: 0;
+          color: $white;
+        }
+
+        &__info {
+          text-align: right;
+
+          &__flex {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+          }
+        }
+      }
+
+      &__pins {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        text-align: center;
+
+        &__items {
+          width: calc(33% - 16px);
+
+          &:nth-child(1) {
+            p {
+              color: $red;
+            }
+          }
+        }
+
+        &__icon svg {
+          width: 100%;
+          margin: auto;
+          text-align: center;
+          justify-self: center;
+          height: 44px;
+        }
+      }
+
+      &__info {
+        background: $black;
+        width: 95%;
+        margin: auto;
+        height: 200px;
+        border-radius: 32px 59px 0 28px;
+      }
+    }
+  }
+}
+
+.Card {
+  border-radius: 8px 8px 0 0;
+  background: $charcoal;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+
+  &__flex {
+    display: flex;
+    gap: 0;
+    margin-bottom: 32px;
+
+    &__item {
+      overflow: hidden;
+      width: 50%;
+      aspect-ratio: 1 / 1;
+
+      svg {
+        object-position: center;
+        object-fit: cover;
+      }
+
+      &__folds {
+        width: 100%;
+
+        svg {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

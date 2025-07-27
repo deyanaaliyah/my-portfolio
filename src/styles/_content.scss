@@ -1,0 +1,8 @@
+$max_content_width: 824px;
+
+@mixin content {
+  width: calc(100% - 32px);
+  max-width: $max_content_width;
+  margin: auto;
+  padding: 16px 0;
+}

@@ -1,0 +1,96 @@
+@use "../../styles" as *;
+
+.Footer {
+  background: $charcoal;
+  padding: 16px 0;
+  width: 100vw;
+
+  &__logo {
+    @include content;
+
+    &__img {
+      width: 100%;
+    }
+
+    & p {
+      @include text-primary-small-text;
+      color: $grey;
+    }
+  }
+
+  &__connect {
+    @include content;
+    margin-bottom: 32px;
+
+    & a {
+      @include font-glass-edge();
+      @include text-primary-text;
+      color: $grey;
+      font-size: 13px;
+      display: block;
+    }
+
+    & p {
+      @include font-velvet-mango();
+      font-size: 17px;
+      color: $grey;
+      margin: 0;
+    }
+  }
+
+  &__navigation {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    gap: 16px;
+    padding: 0 4px;
+    color: $black;
+    height: 28px;
+    width: 180px;
+    border-radius: 80px;
+    margin: auto;
+    background: $white;
+    background: linear-gradient(
+      45deg,
+      rgba(243, 243, 243, 0.5) 0%,
+      rgba(221, 221, 221, 0.9) 50%,
+      rgba(249, 249, 249, 0.5) 100%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    overflow: hidden;
+
+    & a {
+      @include text-no-decoration;
+      @include text-primary-small-text;
+      @include font-futura();
+      font-weight: 500;
+      line-height: 20px;
+      height: 20px;
+      text-align: center;
+      width: 100px;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      display: flex;
+      margin: auto;
+      color: $black;
+      border-radius: 30px;
+      z-index: 2;
+    }
+
+    &__active {
+      color: $black !important;
+    }
+
+    &__highlight {
+      @include glass();
+      position: absolute;
+      margin-top: 3px;
+      height: 20px;
+      border-radius: 30px;
+      transition: left 0.3s ease, width 0.3s ease, opacity 0.3s ease;
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
+}
