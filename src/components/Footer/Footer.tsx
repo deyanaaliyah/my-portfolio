@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import type { INavigationItem } from "../../interfaces";
 
 export const Footer = () => {
-  const navItems = useLocalizedItems("navigation");
+  const navItems = useLocalizedItems("navigation") as INavigationItem[];
   const location = useLocation();
   const containerRef = useRef<HTMLDivElement>(null);
   const [highlightStyle, setHighlightStyle] = useState<{

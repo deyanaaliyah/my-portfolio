@@ -2,7 +2,14 @@ import { useTranslation } from "react-i18next";
 import { SplitView } from "../../components";
 import "./Home.scss";
 import { Link } from "react-router-dom";
-import { Folds, Plane, ShapedCircles, TechFieldset, Audio, Hike } from "../../SVG";
+import {
+  Folds,
+  Plane,
+  ShapedCircles,
+  TechFieldset,
+  Audio,
+  Hike,
+} from "../../SVG";
 import { Star } from "../../SVG";
 
 export const Home = () => {
@@ -40,6 +47,9 @@ export const Home = () => {
         );
       });
   };
+
+  const hobbyTitle = t("home.hobby.title", { returnObjects: true }) as string[];
+  const hobbies = t("home.hobby.hobbies", { returnObjects: true }) as string[];
 
   return (
     <>
@@ -96,19 +106,19 @@ export const Home = () => {
           <div className="Home__hobbies__decoration"></div>
           <div className="Home__hobbies__content">
             <div>
-              <p>What do I do in my free time?</p>
+              <p>{t("home.hobby.intro")}</p>
             </div>
             <div className="Home__hobbies__content__title">
               <div>
                 <h3>
-                  <span>Obviously</span> I have other hobbies too
+                  <span>{hobbyTitle[0]}</span> {hobbyTitle[1]}
                 </h3>
-                <h4>And they come in handy</h4>
+                <h4>{t("home.hobby.subtitle")}</h4>
               </div>
               <div className="Home__hobbies__content__title__info">
                 <div className="Home__hobbies__content__title__info__flex">
                   <Star color="white" />
-                  <p>CPH</p>
+                  <p>{t("home.hobby.cph")}</p>
                 </div>
                 <p>27YO</p>
               </div>
@@ -130,27 +140,25 @@ export const Home = () => {
                     color="white"
                     className="Home__hobbies__content__pins__icon"
                   />
-                  <p>Aviation</p>
+                  <p>{hobbies[0]}</p>
                 </div>
                 <div className="Home__hobbies__content__pins__items">
                   <Audio
                     color="white"
                     className="Home__hobbies__content__pins__icon"
                   />
-                  <p>Music</p>
+                  <p>{hobbies[1]}</p>
                 </div>
                 <div className="Home__hobbies__content__pins__items">
                   <Hike
                     color="white"
                     className="Home__hobbies__content__pins__icon"
                   />
-                  <p>Hiking</p>
+                  <p>{hobbies[2]}</p>
                 </div>
               </div>
 
-              <div className="Home__hobbies__content__info">
-
-              </div>
+              <div className="Home__hobbies__content__info"></div>
             </div>
           </div>
         </div>

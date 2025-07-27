@@ -19,6 +19,13 @@
     "traits": {
       "title": "Design er vigtig  ligesom kode er",
       "quote": "Vi bruger så lang tid på at skrive smuk kode og top notch algoritme – UI fortjener den samme respekt."
+    },
+    "hobby": {
+      "intro": "Hvad laver jeg i min fritid?",
+      "title": ["Selvfølgelig", "har jeg også hobbier"],
+      "subtitle": "Og de er til fordele",
+      "cph": "Kbh",
+      "hobbies": ["Aviation", "Musik", "Vandring"]
     }
   },
   "preferences": "indstillinger"
