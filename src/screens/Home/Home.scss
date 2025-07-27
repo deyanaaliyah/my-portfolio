@@ -30,6 +30,12 @@
       color: var(--creme);
       text-transform: lowercase;
     }
+
+    &__title-container {
+      @media (min-width: $tablet-vertical) {
+        width: 50%;
+      }
+    }
   }
 
   &__hero {
@@ -119,19 +125,24 @@
       text-align: center;
       text-transform: uppercase;
 
-      & h3 {
-        font-size: 74px;
+      &__title {
+        font-size: 34px;
         margin: 16px auto;
+
+        @media (min-width: $tablet-vertical) {
+          font-size: 74px;
+        }
       }
 
       & p {
         @include font-moret();
-        font-size: 20px;
+        font-size: 13px;
         letter-spacing: 1px;
         margin: auto;
 
         @media (min-width: $tablet-vertical) {
           width: 50%;
+          font-size: 20px;
         }
       }
     }
@@ -157,6 +168,10 @@
 
         & h3 {
           @include font-qomarun();
+          font-size: 64px;
+          line-height: 120%;
+          width: 80%;
+          margin: 0;
 
           & span {
             letter-spacing: -5px;
@@ -164,27 +179,34 @@
             font-style: italic;
           }
 
-          font-size: 80px;
-          line-height: 120%;
-          width: 80%;
-          margin: 0;
+          @media (min-width: $tablet-vertical) {
+            font-size: 80px;
+          }
         }
 
         & h4 {
           @include font-babas-neue();
-          font-size: 20px;
+          font-size: 14px;
           letter-spacing: 0.7px;
           margin-top: 0;
           color: $white;
+
+          @media (min-width: $tablet-vertical) {
+            font-size: 20px;
+          }
         }
 
         & p {
           @include font-qomarun();
           text-align: right;
-          font-size: 60px;
           line-height: 120%;
           margin: 0;
           color: $white;
+          font-size: 54px;
+
+          @media (min-width: $tablet-vertical) {
+            font-size: 60px;
+          }
         }
 
         &__info {

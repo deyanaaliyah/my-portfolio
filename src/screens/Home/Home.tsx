@@ -57,7 +57,7 @@ export const Home = () => {
         <SplitView className="Home__intro">
           <TechFieldset />
 
-          <div className="Home__intro">
+          <div className="Home__intro__title-container">
             <h1 className="Home__intro__title">{title()}</h1>
             <p className="Home__intro__tagline">{t("home.tagline")}</p>
           </div>
@@ -65,7 +65,7 @@ export const Home = () => {
 
         <div className="Home__traits">
           <div className="Home__traits__content">
-            <h3>{t("home.traits.title")}</h3>
+            <h3 className="Home__traits__content__title">{t("home.traits.title")}</h3>
             <p>{t("home.traits.quote")}</p>
           </div>
         </div>

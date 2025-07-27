@@ -4,7 +4,7 @@
   padding: 6px;
   position: relative;
 
-  @media screen and (min-width: $tablet-vertical) {
+  @media (min-width: $tablet-vertical) {
     width: 50%;
     max-width: 453px;
   }
@@ -12,11 +12,15 @@
   .TechFieldset__text {
     overflow: hidden;
     position: absolute;
-    width: 360px;
+    width: 90%;
     height: 22px;
     top: calc(50% - 11px);
     left: 50%;
     transform: translateX(-50%);
+
+    @media (min-width: 426px) {
+      width: 360px;
+    }
 
     &-wrapper {
       display: flex;
@@ -24,11 +28,14 @@
       width: max-content;
       animation: slide-left 20s linear infinite;
     }
-
   }
 
   &__image-container {
     padding: 10px;
+
+    & svg {
+      width: 100%;
+    }
   }
 
   &__side {

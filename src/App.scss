@@ -6,6 +6,7 @@ body {
   margin: 0;
   @include font-futura();
   font-weight: 500;
+  // overflow: hidden;
 }
 
 a {
@@ -27,4 +28,3 @@ a {
 main {
   flex: 1;
 }
-

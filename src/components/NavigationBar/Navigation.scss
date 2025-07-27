@@ -5,6 +5,7 @@
   @include glass();
   padding: 0;
   display: flex;
+  justify-content: baseline;
   position: fixed;
   top: 16px;
   left: 50%;
@@ -12,28 +13,37 @@
   overflow: hidden;
   z-index: 10;
 
+  @media (max-width: $tablet-vertical) {
+    justify-content: baseline;
+  }
+
   &__logo {
     height: 44px;
     line-height: 60px;
-    margin: auto;
+    margin: 0 auto;
     width: 100px;
     text-align: center;
   }
 
   &__ul {
     @include font-futura();
-    font-weight: 700;
-    text-transform: lowercase;
-    list-style-type: none;
-    display: flex;
     line-height: 44px;
     width: calc(75px * 3 + 16px * 3);
-    margin: auto;
+    margin-top: 100px;
+    font-weight: 700;
     padding-inline-start: 0;
+    text-transform: lowercase;
+    list-style-type: none;
+
+    @media (min-width: $tablet-vertical) {
+      display: flex;
+      margin: auto;
+    }
 
     & a {
       @include text-no-decoration;
       text-align: center;
+
       @media (min-width: $tablet-vertical) {
         width: 130px;
       }
@@ -54,7 +64,7 @@
     @include font-futura();
     font-weight: 700;
     text-transform: lowercase;
-    margin: auto;
+    margin: 12px auto;
     min-height: 0;
     height: 22px;
     line-height: 22px;
@@ -78,16 +88,11 @@
 
 @media (max-width: $tablet-vertical) {
   .NavigationBar {
-    grid-template-columns: 1fr;
-    width: 95%;
-    padding: 8px;
     border-radius: 31px;
     cursor: pointer;
 
     &__ul {
-      justify-content: space-around;
       width: unset;
-      flex-wrap: wrap;
       gap: 8px;
     }
   }
