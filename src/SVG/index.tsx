@@ -7,3 +7,4 @@ export * from "./ShapedCircles/ShapedCircles";
 export * from "./Folds/Folds";
 export * from "./Audio/Audio";
 export * from "./Hike/Hike";
+export * from "./Footer/FooterLogo";

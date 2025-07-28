@@ -152,6 +152,7 @@
     background: $black;
     padding-bottom: 0;
     margin-bottom: 0;
+    text-transform: uppercase;
 
     &__content {
       @include content;

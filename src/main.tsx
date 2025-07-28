@@ -22,7 +22,6 @@ const initializeApp = async () => {
   );
 };
 
-// Vis midlertidig loading mens async initialisering kører
 root.render(<div>Loading application...</div>);
 
 initializeApp().catch((error) => {

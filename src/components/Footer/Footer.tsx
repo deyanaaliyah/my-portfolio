@@ -3,6 +3,7 @@ import { useLocalizedItems } from "../../hooks";
 import "./Footer.scss";
 import { useEffect, useRef, useState } from "react";
 import type { INavigationItem } from "../../interfaces";
+import { FooterLogo } from "../../SVG";
 
 export const Footer = () => {
   const navItems = useLocalizedItems("navigation") as INavigationItem[];
@@ -51,11 +52,7 @@ export const Footer = () => {
         <a href="https://github.com/deyanaaliyah">Github</a>
       </div>
       <div className="Footer__logo">
-        <img
-          src="public/footer-logo.png"
-          alt="deyanaaliyah"
-          className="Footer__logo__img"
-        />
+        <FooterLogo color="white" />
 
         <p>website by deyanaaliyah</p>
         <p>© {new Date().getFullYear()}</p>
