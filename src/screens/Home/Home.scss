@@ -56,7 +56,7 @@
         @include text-primary-header;
         font-family: "Lobster", sans-serif;
         font-weight: 500;
-        font-size: 6.5cqmin;
+        font-size: 10cqmin;
         line-height: 120%;
         text-align: center;
         color: $creme;
@@ -66,12 +66,16 @@
         margin: 0 auto 32px auto;
         box-shadow: rgba(143, 0, 0, 0.3) 0 0 10px 10px inset;
         transition: background-image 0.2s ease-out;
+
+        @media (min-width: $tablet-vertical) {
+          font-size: 6.5cqmin;
+        }
       }
 
       &__subtitle {
         @include text-primary-header;
         font-family: "Lobster", sans-serif;
-        font-size: 9cqmin;
+        font-size: 10cqmin;
         font-weight: 500;
         text-align: center;
 
@@ -140,7 +144,7 @@
 
       &__title {
         font-family: "Futura-Bold";
-        font-size: 34px;
+        font-size: 54px;
         margin: 16px auto;
 
         @media (min-width: $tablet-vertical) {
@@ -152,9 +156,10 @@
         font-family: "Roboto Slab", serif;
         text-transform: lowercase;
         font-weight: 100;
-        font-size: 13px;
+        font-size: 18px;
         letter-spacing: 1px;
         margin: auto;
+        width: 80%;
 
         @media (min-width: $tablet-vertical) {
           width: 60%;
@@ -166,6 +171,7 @@
 
   &__hobbies {
     background: $black;
+    color: $white;
     padding-bottom: 0;
     margin-bottom: 0;
     text-transform: uppercase;
