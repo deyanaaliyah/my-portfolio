@@ -1,0 +1,45 @@
+@use "../../styles" as *;
+
+.Intro {
+  margin-bottom: 32px;
+
+  &__title {
+    @include text-primary-header;
+    font-family: "INTEL ONE MONO";
+    font-weight: 500;
+    letter-spacing: -1.4px;
+    color: var(--creme);
+    text-transform: lowercase;
+
+    @media (min-width: $tablet-vertical) {
+      margin: 0;
+    }
+  }
+
+  &__highlight1 {
+    color: $watermelon;
+    font-weight: 500;
+    letter-spacing: -1.4px;
+  }
+
+  &__highlight2 {
+    color: var(--creme);
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: -1.4px;
+  }
+
+  &__tagline {
+    @include text-primary-text;
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    color: var(--creme);
+    text-transform: lowercase;
+  }
+
+  &__title-container {
+    @media (min-width: $tablet-vertical) {
+      width: 50%;
+    }
+  }
+}

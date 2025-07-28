@@ -1,0 +1,39 @@
+@use "../../styles" as *;
+
+.Traits {
+  background: $charcoal;
+  color: $white;
+
+  &__content {
+    @include content;
+    overflow: hidden;
+    padding: 64px 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-family: "Futura-Bold";
+    font-size: 54px;
+    margin: 16px auto;
+
+    @media (min-width: $tablet-vertical) {
+      font-size: 74px;
+    }
+  }
+
+  &__quote {
+    font-family: "Roboto Slab", serif;
+    text-transform: lowercase;
+    font-weight: 100;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: auto;
+    width: 80%;
+
+    @media (min-width: $tablet-vertical) {
+      width: 60%;
+      font-size: 20px;
+    }
+  }
+}

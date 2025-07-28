@@ -12,8 +12,6 @@
     "exit": "Afslut"
   },
   "home": {
-    "title": "Hej, navnet er Deyan - en full stack udvikler, der forvandler ideer til digitale produkter",
-    "tagline": "Fra GO backends og React UIs til Swift apps, skriver jeg kode der føles hurtig, reliable og jeg eksperimentere ofte med forskellige practices og designs",
     "seeking": "Leder efter nye eventyr",
     "outro": "og meget mere",
     "traits": {
@@ -25,8 +23,28 @@
       "title": ["Selvfølgelig", "har jeg også hobbier"],
       "subtitle": "Og de er til fordele",
       "cph": "Kbh",
-      "hobbies": ["Aviation", "Musik", "Vandring"]
+      "hobbies": [
+        {
+          "title": "Aviation",
+          "description": "Min interesse for luftfart vidner om en fascination for komplekse systemer, præcision og sikkerhed. Jeg har respekt for, hvordan ting hænger sammen – og hvornår man ikke må bøje regler.",
+          "icon": "Aviation"
+        },
+        {
+          "title": "Musik",
+          "description": "Musik styrker derimod min evne til at tænke kreativt og genkende mønstre på tværs af sanser. Jeg arbejder ofte intuitivt og hurtigt, når jeg først fornemmer helheden.",
+          "icon": "Music"
+        },
+        {
+          "title": "Vandring",
+          "description": "Vandring kræver tålmodighed og udholdenhed. Egenskaber jeg bruger, når jeg skal løse komplekse problemer og bevare overblikket over lange udviklingsforløb.",
+          "icon": "Hiking"
+        }
+      ]
     }
   },
-  "preferences": "indstillinger"
+  "preferences": "indstillinger",
+  "intro": {
+    "title": "Hej, navnet er Deyan - en full stack udvikler, der forvandler ideer til digitale produkter",
+    "subtitle": "Fra GO backends og React UIs til Swift apps, skriver jeg kode der føles hurtig, reliable og jeg eksperimentere ofte med forskellige practices og designs"
+  }
 }

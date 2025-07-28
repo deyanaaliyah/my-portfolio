@@ -1,0 +1,87 @@
+@use "../../styles" as *;
+
+.Hero {
+  background: $creme;
+  color: $red;
+
+  &__content {
+    @include content;
+  }
+
+  &__title {
+    @include text-primary-header;
+    font-family: "Lobster", sans-serif;
+    font-weight: 500;
+    font-size: 10cqmin;
+    line-height: 120%;
+    text-align: center;
+    color: $creme;
+    background: $red;
+    border-radius: 15px;
+    padding: 64px 16px;
+    margin: 0 auto 32px auto;
+    box-shadow: rgba(143, 0, 0, 0.3) 0 0 10px 10px inset;
+    transition: background-image 0.2s ease-out;
+
+    @media (min-width: $tablet-vertical) {
+      font-size: 6.5cqmin;
+    }
+  }
+
+  &__outro {
+    @include text-primary-header;
+    font-family: "Lobster", sans-serif;
+    font-size: 10cqmin;
+    font-weight: 500;
+    text-align: center;
+
+    @media (min-width: $tablet-vertical) {
+      font-size: 6.5cqmin;
+    }
+  }
+
+  &__stack {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    & h4 {
+      height: unset;
+      line-height: 0;
+    }
+
+    &__linkedInLink {
+      width: 100%;
+      justify-content: end;
+      display: flex;
+      padding-right: 64px;
+
+      & a {
+        font-family: "Bebas Neue";
+        word-spacing: -3.8px;
+        font-size: 20px;
+        height: 20px;
+        border-radius: 50%;
+        transform: skewX(-30deg) rotate(-7deg);
+        border: 2.5px solid $watermelon;
+        padding: 8px;
+      }
+    }
+  }
+
+  &__stackList {
+    @include text-primary-text;
+    width: 80px;
+    line-height: 18px;
+
+    &__stackItem {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__stackItem:nth-child(1) {
+      font-weight: 800;
+    }
+  }
+}

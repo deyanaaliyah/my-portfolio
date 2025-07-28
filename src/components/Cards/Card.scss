@@ -1,0 +1,13 @@
+.Card {
+  border-radius: 8px;
+  min-height: 200px;
+  margin-bottom: 16px;
+  overflow: hidden;
+
+  &__content {
+    &__padding {
+      padding: 16px;
+    }
+    overflow: hidden;
+  }
+}

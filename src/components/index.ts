@@ -4,3 +4,8 @@ export * from "./Preset/Preset";
 export * from "./SplitView/SplitView";
 export * from "./Modal/Modal";
 export * from "./Button/Button";
+export * from "./Traits/Traits";
+export * from "./Intro/Intro";
+export * from "./Hero/Hero";
+export * from "./Hobbies/Hobbies";
+export * from "./Cards";

@@ -21,6 +21,13 @@ export interface IModal {
   children: ReactNode;
 }
 
+export interface ICard {
+  children: ReactNode;
+  background?: string;
+  className?: string;
+  hasPadding?: boolean;
+}
+
 export interface IPreset {
   onClick: () => void;
 }
@@ -65,4 +72,11 @@ export interface IColor {
     | "emerald"
     | "creme";
   className?: string;
+}
+
+// === HOBBY ===
+export interface IHobby {
+  title: string;
+  description: string;
+  icon: "Aviation" | "Music" | "Hiking";
 }
