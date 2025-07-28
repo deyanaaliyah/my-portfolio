@@ -3,10 +3,11 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "../public/i18n";
-import { setLanguage, setTheme } from "./hooks";
+import { setLanguage, setTheme, watchSystemTheme } from "./hooks";
 
 setLanguage();
 setTheme();
+watchSystemTheme();
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

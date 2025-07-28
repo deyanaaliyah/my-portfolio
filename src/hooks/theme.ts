@@ -1,26 +1,31 @@
-export const addThemeListener = (elementId: string) => {
-  const el = document.getElementById(elementId);
-  if (!el) return;
-
-  el.addEventListener("click", () => {
-    const currentTheme = localStorage.getItem("theme") || "light";
-    const newTheme = currentTheme === "dark" ? "light" : "dark";
-
-    localStorage.setItem("theme", newTheme);
-    document.documentElement.setAttribute("data-theme", newTheme);
-    window.dispatchEvent(new Event("theme-change"));
-  });
-};
-
 export const getCurrentTheme = () => {
-  const theme = localStorage.getItem("theme") || "dark";
-  return theme;
+  const prefersDarkMode = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+  ).matches;
+  return prefersDarkMode ? "dark" : "light";
 };
 
 export const setTheme = () => {
-  const theme = getCurrentTheme();
-  document.documentElement.setAttribute("data-theme", theme);
+  const systemTheme = getCurrentTheme();
+  document.documentElement.setAttribute("data-theme", systemTheme);
   window.dispatchEvent(new Event("theme-change"));
 };
 
-setTheme();
+export const watchSystemTheme = () => {
+  const themePreferenceQuery = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+  );
+
+  const systemThemeChangeListener = (event: MediaQueryListEvent) => {
+    const updatedTheme = event.matches ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", updatedTheme);
+    localStorage.setItem("theme", updatedTheme);
+    window.dispatchEvent(new Event("theme-change"));
+  };
+
+  if (themePreferenceQuery.addEventListener) {
+    themePreferenceQuery.addEventListener("change", systemThemeChangeListener);
+  } else if (themePreferenceQuery.addListener) {
+    themePreferenceQuery.addListener(systemThemeChangeListener); // Safari fallback
+  }
+};

@@ -14,6 +14,24 @@ import { Star } from "../../SVG";
 
 export const Home = () => {
   const { t } = useTranslation();
+
+  window.addEventListener("scroll", () => {
+    const el = document.getElementById("title-gradient");
+
+    if (!el) return;
+
+    const angle = window.scrollY % 360;
+
+    el.style.backgroundImage = `radial-gradient(
+    ${angle}deg,
+    #fd555a
+    #f84d4e,
+    #f34441,
+    #ee3c34,
+    #e83426
+  )`;
+  });
+
   const title = () => {
     return t("home.title")
       .split(" ")
@@ -65,14 +83,18 @@ export const Home = () => {
 
         <div className="Home__traits">
           <div className="Home__traits__content">
-            <h3 className="Home__traits__content__title">{t("home.traits.title")}</h3>
+            <h3 className="Home__traits__content__title">
+              {t("home.traits.title")}
+            </h3>
             <p>{t("home.traits.quote")}</p>
           </div>
         </div>
 
         <div className="Home__hero">
           <div className="Home__hero__content">
-            <h2 className="Home__hero__content__title">{t("home.seeking")}</h2>
+            <h2 id="title-gradient" className="Home__hero__content__title">
+              {t("home.seeking")}
+            </h2>
 
             <div className="Home__hero__content__why">
               <div className="Home__hero__content__why__link-to-github">

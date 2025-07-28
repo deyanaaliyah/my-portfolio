@@ -5,28 +5,32 @@
     margin-bottom: 32px;
 
     &__title {
-      font-family: "Vanzi";
       @include text-primary-header;
+      font-family: "INTEL ONE MONO";
+      font-weight: 500;
+      letter-spacing: -1.4px;
       color: var(--creme);
       text-transform: lowercase;
-      margin-bottom: 32px;
+      margin: 0;
     }
 
     &__highlight1 {
-      font-family: "Velvet Mango";
       color: $watermelon;
-      font-weight: 800;
+      font-weight: 500;
+      letter-spacing: -1.4px;
     }
 
     &__highlight2 {
-      font-family: "Velvet Mango";
       color: var(--creme);
       font-style: italic;
+      font-weight: 500;
+      letter-spacing: -1.4px;
     }
 
     &__tagline {
       @include text-primary-text;
-      font-family: "Neue Haas Unica Pro", sans-serif;
+      font-family: "Roboto Slab", serif;
+      font-weight: 300;
       color: var(--creme);
       text-transform: lowercase;
     }
@@ -47,22 +51,25 @@
 
       &__title {
         @include text-primary-header;
-        font-family: "Velvet Mango";
+        font-family: "Lobster", sans-serif;
+        font-weight: 500;
         font-size: 6.5cqmin;
-        line-height: 70px;
+        line-height: 120%;
         text-align: center;
         color: $creme;
         background: $red;
         border-radius: 15px;
         padding: 64px 16px;
         margin: 0 auto 32px auto;
+        box-shadow: rgba(143, 0, 0, 0.3) 0 0 10px 10px inset;
+        transition: background-image 0.2s ease-out;
       }
 
       &__subtitle {
         @include text-primary-header;
-        font-family: "Velvet Mango";
-        font-size: 9cqmin;
-        font-weight: 800;
+        font-family: "Lobster", sans-serif;
+        font-size: 6.5cqmin;
+        font-weight: 500;
         text-align: center;
       }
 
@@ -85,7 +92,6 @@
 
           & a {
             font-family: "Bebas Neue";
-
             word-spacing: -3.8px;
             font-size: 20px;
             height: 20px;
@@ -136,13 +142,15 @@
       }
 
       & p {
-        font-family: "Moret";
+        font-family: "Roboto Slab", serif;
+        text-transform: lowercase;
+        font-weight: 100;
         font-size: 13px;
         letter-spacing: 1px;
         margin: auto;
 
         @media (min-width: $tablet-vertical) {
-          width: 50%;
+          width: 60%;
           font-size: 20px;
         }
       }
