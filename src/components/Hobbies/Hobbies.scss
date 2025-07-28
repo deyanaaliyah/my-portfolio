@@ -44,7 +44,6 @@
       &__h4 {
         margin-top: 0;
         color: $white;
-
         font-family: "Intel One Mono", monospace;
         text-transform: uppercase;
         font-size: 14px;
@@ -58,6 +57,7 @@
 
     &__info {
       text-align: right;
+
       &__flex {
         display: flex;
         gap: 5px;
@@ -99,9 +99,7 @@
   }
 
   &__pins {
-    display: flex;
     width: 95%;
-    justify-content: space-between;
     text-align: center;
     background: $black;
     margin: auto auto 16px;
@@ -109,12 +107,21 @@
     overflow: hidden;
     border: 1px solid grey;
 
+    @media (min-width: $tablet_vertical) {
+      display: flex;
+      justify-content: space-between;
+    }
+
     &__header {
       border-color: grey;
-      border-bottom: 1px solid;
       font-family: "Righteous", sans-serif;
       font-size: min(max(20px, 3vw), 30px);
       text-transform: uppercase;
+
+      @media (min-width: $tablet_vertical) {
+        border-bottom: 1px solid;
+        border-top: 0;
+      }
     }
 
     &__highlighted {
@@ -123,8 +130,12 @@
 
     &__icon svg {
       margin-top: 16px;
-      max-width: 94px;
       height: 54px;
+      width: 100%;
+      
+      @media (min-width: $tablet_vertical) {
+        max-width: 94px;
+      }
     }
 
     &__description {
@@ -134,8 +145,15 @@
 
     &__1 {
       border-color: grey;
-      border-right: 1px solid;
-      border-left: 1px solid;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+
+      @media (min-width: $tablet_vertical) {
+        border-right: 1px solid;
+        border-left: 1px solid;
+        border-top: 0;
+        border-bottom: 0;
+      }
     }
   }
 }

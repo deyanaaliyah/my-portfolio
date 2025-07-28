@@ -23,15 +23,16 @@
     margin-bottom: 32px;
 
     & a {
-      font-family: "Glass Edge";
       @include text-primary-text;
-      color: $grey;
+      font-family: "Roboto Slab", serif;
       font-size: 13px;
+      font-weight: 400;
+      color: $grey;
       display: block;
     }
 
     & p {
-      font-family: "Velvet Mango Regular";
+      font-family: "Abril Fatface", serif;
       font-size: 17px;
       color: $grey;
       margin: 0;
