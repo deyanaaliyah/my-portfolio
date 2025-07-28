@@ -5,9 +5,10 @@
   overflow: hidden;
 
   &__content {
+    overflow: hidden;
+
     &__padding {
       padding: 16px;
     }
-    overflow: hidden;
   }
 }

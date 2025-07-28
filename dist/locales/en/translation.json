@@ -12,8 +12,6 @@
     "exit": "Exit"
   },
   "home": {
-    "title": "Hi,  I’m Deyan - a full stack developer who turns ideas into polished digital products",
-    "tagline": "From GO backend and React UIs to Swift-driven apps, I write code that feels fast, reliable and I experiment different practices and designs.",
     "seeking": "Looking for a new adventure",
     "outro": "and way more",
     "traits": {
@@ -25,8 +23,28 @@
       "title": ["Obviously", "I have other hobbies too"],
       "subtitle": "And they come in handy",
       "cph": "Cph",
-      "hobbies": ["Aviation", "Music", "Hiking"]
+      "hobbies": [
+        {
+          "title": "Aviation",
+          "description": "My passion for aviation reflects an appreciation for complex systems, precision, and safety. I understand the importance of structure—and when rules are not meant to be bent.",
+          "icon": "Aviation"
+        },
+        {
+          "title": "Music",
+          "description": "On the other hand, enhances my ability to think creatively and recognize patterns across senses. I often work intuitively and fast once I sense the bigger picture.",
+          "icon": "Music"
+        },
+        {
+          "title": "Hiking",
+          "description": "Hiking builds patience and endurance, skills I rely on when solving complex problems and staying focused through long development processes.",
+          "icon": "Hiking"
+        }
+      ]
     }
   },
-  "preferences": "preferences"
+  "preferences": "preferences",
+  "intro": {
+    "title": "Hi,  I’m Deyan - a full stack developer who turns ideas into polished digital products",
+    "subtitle": "From GO backend and React UIs to Swift-driven apps, I write code that feels fast, reliable and I experiment different practices and designs."
+  }
 }
