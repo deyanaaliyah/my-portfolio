@@ -23,7 +23,7 @@
     margin-bottom: 32px;
 
     & a {
-      @include font-glass-edge();
+      font-family: "Glass Edge";
       @include text-primary-text;
       color: $grey;
       font-size: 13px;
@@ -31,7 +31,7 @@
     }
 
     & p {
-      @include font-velvet-mango();
+      font-family: "Velvet Mango Regular";
       font-size: 17px;
       color: $grey;
       margin: 0;
@@ -62,7 +62,7 @@
     & a {
       @include text-no-decoration;
       @include text-primary-small-text;
-      @include font-futura();
+      font-family: "Futura";
       font-weight: 500;
       line-height: 20px;
       height: 20px;

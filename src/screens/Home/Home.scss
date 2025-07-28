@@ -5,7 +5,7 @@
     margin-bottom: 32px;
 
     &__title {
-      @include font-vanzi();
+      font-family: "Vanzi";
       @include text-primary-header;
       color: var(--creme);
       text-transform: lowercase;
@@ -13,13 +13,13 @@
     }
 
     &__highlight1 {
-      @include font-velvet-mango();
+      font-family: "Velvet Mango";
       color: $watermelon;
       font-weight: 800;
     }
 
     &__highlight2 {
-      @include font-velvet-mango();
+      font-family: "Velvet Mango";
       color: var(--creme);
       font-style: italic;
     }
@@ -47,23 +47,23 @@
 
       &__title {
         @include text-primary-header;
-        @include font-velvet-mango();
+        font-family: "Velvet Mango";
         font-size: 6.5cqmin;
         line-height: 70px;
+        text-align: center;
         color: $creme;
         background: $red;
         border-radius: 15px;
         padding: 64px 16px;
         margin: 0 auto 32px auto;
-        text-align: center;
       }
 
       &__subtitle {
         @include text-primary-header;
-        @include font-velvet-mango();
-        text-align: center;
+        font-family: "Velvet Mango";
         font-size: 9cqmin;
         font-weight: 800;
+        text-align: center;
       }
 
       &__why {
@@ -84,7 +84,7 @@
           padding-right: 64px;
 
           & a {
-            @include font-babas-neue();
+            font-family: "Bebas Neue";
 
             word-spacing: -3.8px;
             font-size: 20px;
@@ -126,6 +126,7 @@
       text-transform: uppercase;
 
       &__title {
+        font-family: "Futura-Bold";
         font-size: 34px;
         margin: 16px auto;
 
@@ -135,7 +136,7 @@
       }
 
       & p {
-        @include font-moret();
+        font-family: "Moret";
         font-size: 13px;
         letter-spacing: 1px;
         margin: auto;
@@ -159,7 +160,7 @@
       padding-bottom: 0;
 
       & p {
-        @include font-babas-neue();
+        font-family: "Bebas Neue";
         letter-spacing: 0.7px;
         color: $grey;
       }
@@ -168,8 +169,9 @@
         display: flex;
 
         & h3 {
-          @include font-qomarun();
+          font-family: "Qomarun";
           font-size: 64px;
+          font-weight: 400;
           line-height: 120%;
           width: 80%;
           margin: 0;
@@ -186,8 +188,9 @@
         }
 
         & h4 {
-          @include font-babas-neue();
+          font-family: "Bebas Neue";
           font-size: 14px;
+          font-weight: 400;
           letter-spacing: 0.7px;
           margin-top: 0;
           color: $white;
@@ -198,7 +201,7 @@
         }
 
         & p {
-          @include font-qomarun();
+          font-family: "Qomarun";
           text-align: right;
           line-height: 120%;
           margin: 0;

@@ -26,7 +26,7 @@
   }
 
   &__ul {
-    @include font-futura();
+    font-family: "Futura";
     line-height: 44px;
     width: calc(75px * 3 + 16px * 3);
     margin-top: 100px;
@@ -61,7 +61,7 @@
   }
 
   & .Button {
-    @include font-futura();
+    font-family: "Futura";
     font-weight: 700;
     text-transform: lowercase;
     margin: 12px auto;

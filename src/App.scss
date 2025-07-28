@@ -4,7 +4,7 @@ html,
 body {
   height: 100%;
   margin: 0;
-  @include font-futura();
+  font-family: "Futura";
   font-weight: 500;
   // overflow: hidden;
 }

@@ -1,114 +1,192 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-@mixin font-babas-neue() {
+// === BEBAS NEUE ===
+@font-face {
   font-family: "Bebas Neue", sans-serif;
   font-style: normal;
+  src: url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 }
 
-@mixin font-auralith() {
+// === AURALITH ===
+@font-face {
   font-family: "Auralith", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/Auralith.otf") format("otf"),
-    url("./fonts/AuralithItalic.otf") format("otf");
+  src: url("/fonts/Auralith.otf") format("truetype");
 }
 
-@mixin font-burgie() {
+@font-face {
+  font-family: "Auralith Italic", sans-serif;
+  src: url("/fonts/AuralithItalic.otf") format("truetype");
+}
+
+// === BURGIE ===
+@font-face {
   font-family: "Burgie";
-  font-style: normal;
-  src: url("./fonts/BurgieBlack.ttf") format("tff"),
-    url("./fonts/BurgieDemibold.ttf") format("tff"),
-    url("./fonts/BurgieExtrabold.ttf") format("tff"),
-    url("./fonts/BurgieExtralight.ttf") format("tff"),
-    url("./fonts/BurgieHeavy.ttf") format("tff"),
-    url("./fonts/BurgieLight.ttf") format("tff"),
-    url("./fonts/BurgieMedium.ttf") format("tff"),
-    url("./fonts/BurgieNormal.ttf") format("tff"),
-    url("./fonts/BurgieMedium.ttf") format("tff"),
-    url("./fonts/BurgieRegular.ttf") format("tff"),
-    url("./fonts/BurgieSemibold.ttf") format("tff"),
-    url("./fonts/BurgieThin.ttf") format("tff"),
-    url("./fonts/BurgieUltraBold.ttf") format("tff"),
-    url("./fonts/BurgieUltralight.ttf") format("tff");
+  src: url("/fonts/BurgieBlack.ttf") format("truetype"),
+    url("/fonts/BurgieDemibold.ttf") format("truetype"),
+    url("/fonts/BurgieExtrabold.ttf") format("truetype"),
+    url("/fonts/BurgieExtralight.ttf") format("truetype"),
+    url("/fonts/BurgieHeavy.ttf") format("truetype"),
+    url("/fonts/BurgieLight.ttf") format("truetype"),
+    url("/fonts/BurgieMedium.ttf") format("truetype"),
+    url("/fonts/BurgieNormal.ttf") format("truetype"),
+    url("/fonts/BurgieMedium.ttf") format("truetype"),
+    url("/fonts/BurgieRegular.ttf") format("truetype"),
+    url("/fonts/BurgieSemibold.ttf") format("truetype"),
+    url("/fonts/BurgieThin.ttf") format("truetype"),
+    url("/fonts/BurgieUltraBold.ttf") format("truetype"),
+    url("/fonts/BurgieUltralight.ttf");
 }
 
-@mixin font-futura() {
-  font-family: "Futura";
-  font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/Futura Bold Italic.ttf") format("tff"),
-    url("./fonts/Futura Bold.ttf") format("tff"),
-    url("./fonts/Futura Book.ttf") format("tff"),
-    url("./fonts/Futura Condensed.ttf") format("tff"),
-    url("./fonts/Futura Heavy Oblique.ttf") format("tff"),
-    url("./fonts/Futura Heavy.ttf") format("tff"),
-    url("./fonts/Futura Light.ttf") format("tff"),
-    url("./fonts/Futura Medium.ttf") format("tff"),
-    url("./fonts/Futura Round Bold.ttf") format("tff"),
-    url("./fonts/Futura Round Demi Italic.ttf") format("tff"),
-    url("./fonts/Futura Round Demi.ttf") format("tff"),
-    url("./fonts/Futura Round.ttf") format("tff");
+@font-face {
+  font-family: "Burgie Black";
+  src: url("/fonts/BurgieBlack.ttf") format("truetype");
 }
 
-@mixin font-glass-edge() {
-  font-family: "Glass Edge Demo", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/GlassEdgeDemoRegular.ttf") format("tff");
+@font-face {
+  font-family: "Burgie Demi Bold";
+  src: url("/fonts/BurgieDemiBold.ttf") format("truetype");
 }
 
-@mixin font-qomarun() {
+@font-face {
+  font-family: "Burgie Extra Bold";
+  src: url("/fonts/BurgieExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Burgie Extralight";
+  src: url("/fonts/BurgieExtralight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Burgie Normal";
+  src: url("/fonts/BurgieNormal.ttf") format("truetype");
+}
+
+// === FUTURA ===
+@font-face {
+  font-family: "Futura Light";
+  src: url("/fonts/Futura Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Bold";
+  src: url("/fonts/Futura Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Book";
+  src: url("/fonts/Futura Book.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Condensed";
+  src: url("/fonts/Futura Condensed.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Heavy Oblique";
+  src: url("/fonts/Futura Heavy Oblique.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Heavy Oblique";
+  src: url("/fonts/Futura Heavy Oblique.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Heavy";
+  src: url("/fonts/Futura Heavy.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Medium";
+  src: url("/fonts/Futura Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Round Bold";
+  src: url("/fonts/Futura Round Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Round Demi Italic";
+  src: url("/fonts/Futura Round Demi Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Round Demi";
+  src: url("/fonts/Futura Round Demi.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Round";
+  src: url("/fonts/Futura Round.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Bold Italic";
+  src: url("/fonts/Futura Bold Italic.ttf") format("truetype");
+}
+
+// === GLASS EDGE ===
+@font-face {
+  font-family: "Glass Edge Demo" format("truetype"), sans-serif;
+  font-style: normal;
+  src: url("/fonts/GlassEdgeDemoRegular.ttf") format("truetype");
+}
+
+// === QOMARUN ===
+@font-face {
   font-family: "Qomarun";
   font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/Qomarun.ttf") format("tff");
+  src: url("/fonts/Qomarun.ttf") format("truetype");
 }
 
-@mixin font-quartist() {
+// === QUARTIST ===
+@font-face {
   font-family: "Quartist";
   font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/Quartist.ttf") format("tff");
+  src: url("/fonts/Quartist.ttf") format("truetype");
 }
 
-@mixin font-ragwort() {
+// === RAGWORT ===
+@font-face {
   font-family: "Ragwort";
   font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/Ragwort.otf") format("otf");
+  src: url("/fonts/Ragwort.otf") format("truetype");
 }
 
-@mixin font-romarie() {
+// === ROMARIE ===
+@font-face {
   font-family: "Romarie";
   font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/Romarie.otf") format("otf");
+  src: url("/fonts/Romarie.otf") format("truetype");
 }
 
-@mixin font-vanzi() {
+// === VANZI ===
+@font-face {
   font-family: "Vanzi", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/Vanzi.ttf") format("tff");
+  src: url("/fonts/Vanzi.ttf") format("truetype");
 }
 
-@mixin font-velvet-mango() {
-  font-family: "Velvet Mango", sans-serif;
+// === VELVET MANGO ===
+@font-face {
+  font-family: "VelvetMango", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/VelvetMango-Regular.otf") format("otf");
+  src: url("/fonts/VelvetMango-Regular.otf") format("otfc");
 }
 
-@mixin font-moret() {
+// === MORET ===
+@font-face {
   font-family: "Moret", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/Moret-Bold.otf") format("otf"),
-    url("./fonts/Moret-BoldOblique.otf") format("otf"),
-    url("./fonts/Moret-Extrabold.otf") format("otf"),
-    url("./fonts/Moret-ExtraboldOblique.otf") format("otf"),
-    url("./fonts/Moret-Regular.otf") format("otf"),
-    url("./fonts/Moret-RegularOblique.otf") format("otf"),
-    url("./fonts/Moret-Semibold.otf") format("otf"),
-    url("./fonts/Moret-SemiboldOblique.otf") format("otf");
+  src: url("/fonts/Moret-Bold.otf") format("otfc"),
+    url("/fonts/Moret-BoldOblique.otf") format("otfc"),
+    url("/fonts/Moret-Extrabold.otf") format("otfc"),
+    url("/fonts/Moret-ExtraboldOblique.otf") format("otfc"),
+    url("/fonts/Moret-Regular.otf") format("otfc"),
+    url("/fonts/Moret-RegularOblique.otf") format("otfc"),
+    url("/fonts/Moret-Semibold.otf") format("otfc"),
+    url("/fonts/Moret-SemiboldOblique.otf") format("otfc");
 }
