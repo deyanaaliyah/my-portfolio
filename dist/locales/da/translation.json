@@ -51,34 +51,56 @@
     {
       "startYear": "2022",
       "endYear": "2023",
-      "title": "Dataingeniør",
+      "title": "Data Engineer",
       "company": "Udviklings- og Forenklingsstyrelsen",
       "description": "",
-      "technologies": ["ETL", "SQL"]
+      "technologies": [
+        "ETL",
+        "SQL",
+        "Confluence",
+        "Jira",
+        "Governance",
+        "XML",
+        "SOAP"
+      ]
     },
     {
       "startYear": "2023",
       "endYear": "2024",
-      "title": "Systemspecialist",
+      "title": "System Specialist",
       "company": "Intrum",
       "description": "",
-      "technologies": ["MS SQL", "CMS"]
+      "technologies": [
+        "MS SQL",
+        "CMS",
+        "JSON",
+        "Meta data",
+        "Confluence",
+        "Jira"
+      ]
     },
     {
       "startYear": "2024",
       "endYear": "2025",
-      "title": "Full Stack-udvikler",
+      "title": "Full Stack Developer",
       "company": "ScanSpan",
       "description": "",
-      "technologies": ["Go", "Vue.js", "SQL"]
+      "technologies": ["Go", "Vue.js", "SQL", "JWT", "Gorm", "GIN", "Vite"]
     },
     {
       "startYear": "2025",
       "endYear": "",
-      "title": "Full Stack-udvikler",
+      "title": "Full Stack Developer",
       "company": "Rubberduck",
       "description": "",
-      "technologies": ["React.js", ".NET", "Figma"]
+      "technologies": [
+        "React.js",
+        ".NET",
+        "Figma",
+        "Vite",
+        "Headless CMS",
+        "Auto-rendering react components"
+      ]
     }
   ],
   "about": {
@@ -101,6 +123,11 @@
           "school": "Udemy"
         }
       ]
+    },
+    "school": {
+      "title": "Uddannelse",
+      "name": "Datamatiker",
+      "school": "Københavns Erhvervakademi"
     }
   }
 }

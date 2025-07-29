@@ -54,7 +54,15 @@
       "title": "Data Engineer",
       "company": "Udviklings- og Forenklingsstyrelsen",
       "description": "",
-      "technologies": ["ETL", "SQL"]
+      "technologies": [
+        "ETL",
+        "SQL",
+        "Confluence",
+        "Jira",
+        "Governance",
+        "XML",
+        "SOAP"
+      ]
     },
     {
       "startYear": "2023",
@@ -62,7 +70,14 @@
       "title": "System Specialist",
       "company": "Intrum",
       "description": "",
-      "technologies": ["MS SQL", "CMS"]
+      "technologies": [
+        "MS SQL",
+        "CMS",
+        "JSON",
+        "Meta data",
+        "Confluence",
+        "Jira"
+      ]
     },
     {
       "startYear": "2024",
@@ -70,7 +85,7 @@
       "title": "Full Stack Developer",
       "company": "ScanSpan",
       "description": "",
-      "technologies": ["Go", "Vue.js", "SQL"]
+      "technologies": ["Go", "Vue.js", "SQL", "JWT", "Gorm", "GIN", "Vite"]
     },
     {
       "startYear": "2025",
@@ -78,7 +93,14 @@
       "title": "Full Stack Developer",
       "company": "Rubberduck",
       "description": "",
-      "technologies": ["React.js", ".NET", "Figma"]
+      "technologies": [
+        "React.js",
+        ".NET",
+        "Figma",
+        "Vite",
+        "Headless CMS",
+        "Auto-rendering react components"
+      ]
     }
   ],
   "about": {
@@ -101,6 +123,11 @@
           "school": "Udemy"
         }
       ]
+    },
+    "school": {
+      "title": "Education",
+      "name": "AP in Computer Science",
+      "school": "Copenhagen School of Design and Technology"
     }
   }
 }
