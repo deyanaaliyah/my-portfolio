@@ -1,13 +1,8 @@
 import { ShapedCircles, Folds, Star, Plane, Audio, Hike } from "../../SVG";
-import type { IColor, IHobby } from "../../interfaces";
+import { useLocalizedItems } from "../../hooks";
+import type { IColor, IHobby, ILanguage } from "../../interfaces";
 import { Card } from "../Cards";
 import "./Hobbies.scss";
-
-interface HobbiesProps {
-  hobbies: IHobby[];
-  hobbyTitle: string[];
-  t: (key: string) => string | string[];
-}
 
 const iconMap: Record<string, React.FC<IColor>> = {
   Aviation: Plane,
@@ -15,7 +10,10 @@ const iconMap: Record<string, React.FC<IColor>> = {
   Hiking: Hike,
 };
 
-export const Hobbies = ({ hobbies, hobbyTitle, t }: HobbiesProps) => {
+export const Hobbies = ({ t }: ILanguage) => {
+  const hobbies = useLocalizedItems<IHobby>("home.hobby.hobbies");
+  const hobbyTitle = useLocalizedItems<string>("home.hobby.title");
+
   return (
     <section className="Hobbies">
       <div className="Hobbies__content">

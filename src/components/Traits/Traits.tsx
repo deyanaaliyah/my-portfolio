@@ -1,10 +1,7 @@
+import type { ILanguage } from "../../interfaces";
 import "./Traits.scss";
 
-interface TraitsProps {
-  t: (key: string) => string;
-}
-
-export const Traits = ({ t }: TraitsProps) => {
+export const Traits = ({ t }: ILanguage) => {
   return (
     <section className="Traits">
       <div className="Traits__content">

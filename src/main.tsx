@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
-import "../public/i18n";
+import "../public/i18n.ts";
 import { setLanguage, setTheme, watchSystemTheme } from "./hooks";
 
 setLanguage();

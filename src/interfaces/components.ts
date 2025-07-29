@@ -80,3 +80,25 @@ export interface IHobby {
   description: string;
   icon: "Aviation" | "Music" | "Hiking";
 }
+
+// === RESUME ===
+export interface IJob {
+  startYear: string;
+  endYear?: string;
+  title: string;
+  company: string;
+  description?: string;
+  technologies: string[];
+}
+
+// === CERTIFICATES ===
+export interface ICertificate {
+  name: string;
+  school: string;
+}
+[];
+
+// === i18n ===
+export interface ILanguage {
+  t: (key: string) => string;
+}

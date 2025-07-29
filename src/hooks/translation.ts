@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
 
-export const useLocalizedItems = (key: string): [] => {
+export function useLocalizedItems<T>(path: string): T[] {
   const { t } = useTranslation();
-  return t(key, { returnObjects: true }) as [];
-};
+  return t(path, { returnObjects: true }) as T[];
+}
 
 export const getCurrentLanguage = () => {
   const language = localStorage.getItem("i18nextLng") || "en";

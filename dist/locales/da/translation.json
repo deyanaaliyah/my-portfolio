@@ -1,50 +1,106 @@
 {
   "navigation": [
-    { "title": "Hjem", "route": "/" },
+    { "title": "Forside", "route": "/" },
     { "title": "Projekter", "route": "/projects" },
     { "title": "Om", "route": "/about" }
   ],
   "preset": {
-    "bootOptions": "boot indstillinger",
-    "system": "stystem",
+    "bootOptions": "startmuligheder",
+    "system": "system",
     "tools": "værktøjer",
     "today": "I dag er det {{object}}",
     "exit": "Afslut"
   },
   "home": {
-    "seeking": "Leder efter nye eventyr",
+    "seeking": "På udkig efter et nyt eventyr",
     "outro": "og meget mere",
     "traits": {
-      "title": "Design er vigtig  ligesom kode er",
-      "quote": "Vi bruger så lang tid på at skrive smuk kode og top notch algoritme – UI fortjener den samme respekt."
+      "title": "Design er lige så vigtigt som koden",
+      "quote": "Vi bruger så meget tid på at skrive smuk kode og førsteklasses algoritmer, at brugergrænsefladen fortjener lige så meget respekt."
     },
     "hobby": {
       "intro": "Hvad laver jeg i min fritid?",
-      "title": ["Selvfølgelig", "har jeg også hobbier"],
-      "subtitle": "Og de er til fordele",
+      "title": ["Selvfølgelig", "har jeg også andre hobbyer"],
+      "subtitle": "Og de kommer mig til gode",
       "cph": "Kbh",
       "hobbies": [
         {
-          "title": "Aviation",
-          "description": "Min interesse for luftfart vidner om en fascination for komplekse systemer, præcision og sikkerhed. Jeg har respekt for, hvordan ting hænger sammen – og hvornår man ikke må bøje regler.",
+          "title": "AN",
+          "description": "Min passion for aviation afspejler en forståelse for komplekse systemer, præcision og sikkerhed. Jeg forstår vigtigheden af struktur — og hvornår regler ikke skal bøjes.",
           "icon": "Aviation"
         },
         {
           "title": "Musik",
-          "description": "Musik styrker derimod min evne til at tænke kreativt og genkende mønstre på tværs af sanser. Jeg arbejder ofte intuitivt og hurtigt, når jeg først fornemmer helheden.",
+          "description": "På den anden side styrker det min evne til at tænke kreativt og genkende mønstre på tværs af sanser. Jeg arbejder ofte intuitivt og hurtigt, når jeg fanger det store billede.",
           "icon": "Music"
         },
         {
           "title": "Vandring",
-          "description": "Vandring kræver tålmodighed og udholdenhed. Egenskaber jeg bruger, når jeg skal løse komplekse problemer og bevare overblikket over lange udviklingsforløb.",
+          "description": "Vandring opbygger tålmodighed og udholdenhed, færdigheder jeg bruger, når jeg løser komplekse problemer og holder fokus gennem lange udviklingsprocesser.",
           "icon": "Hiking"
         }
       ]
     }
   },
-  "preferences": "indstillinger",
+  "preferences": "præferencer",
   "intro": {
-    "title": "Hej, navnet er Deyan - en full stack udvikler, der forvandler ideer til digitale produkter",
-    "subtitle": "Fra GO backends og React UIs til Swift apps, skriver jeg kode der føles hurtig, reliable og jeg eksperimentere ofte med forskellige practices og designs"
+    "title": "Hej, jeg er Deyan – en full stack-udvikler, der forvandler idéer til polerede digitale produkter",
+    "subtitle": "Fra GO backend og React-brugerflader til Swift-drevne apps skriver jeg kode, der føles hurtig og pålidelig, og jeg eksperimenterer med forskellige metoder og designs."
+  },
+  "jobs": [
+    {
+      "startYear": "2022",
+      "endYear": "2023",
+      "title": "Dataingeniør",
+      "company": "Udviklings- og Forenklingsstyrelsen",
+      "description": "",
+      "technologies": ["ETL", "SQL"]
+    },
+    {
+      "startYear": "2023",
+      "endYear": "2024",
+      "title": "Systemspecialist",
+      "company": "Intrum",
+      "description": "",
+      "technologies": ["MS SQL", "CMS"]
+    },
+    {
+      "startYear": "2024",
+      "endYear": "2025",
+      "title": "Full Stack-udvikler",
+      "company": "ScanSpan",
+      "description": "",
+      "technologies": ["Go", "Vue.js", "SQL"]
+    },
+    {
+      "startYear": "2025",
+      "endYear": "",
+      "title": "Full Stack-udvikler",
+      "company": "Rubberduck",
+      "description": "",
+      "technologies": ["React.js", ".NET", "Figma"]
+    }
+  ],
+  "about": {
+    "resume": {
+      "title": "Det her har jeg lavet"
+    },
+    "certificates": {
+      "title": "certifikater",
+      "items": [
+        {
+          "name": "SQL",
+          "school": "Teknologisk Institut"
+        },
+        {
+          "name": "Datamodellering",
+          "school": "Teknologisk Institut"
+        },
+        {
+          "name": "Java Masterclass",
+          "school": "Udemy"
+        }
+      ]
+    }
   }
 }

@@ -6,7 +6,7 @@
   ],
   "preset": {
     "bootOptions": "boot options",
-    "system": "stystem",
+    "system": "system",
     "tools": "tools",
     "today": "Today is {{object}}",
     "exit": "Exit"
@@ -46,5 +46,61 @@
   "intro": {
     "title": "Hi,  I’m Deyan - a full stack developer who turns ideas into polished digital products",
     "subtitle": "From GO backend and React UIs to Swift-driven apps, I write code that feels fast, reliable and I experiment different practices and designs."
+  },
+  "jobs": [
+    {
+      "startYear": "2022",
+      "endYear": "2023",
+      "title": "Data Engineer",
+      "company": "Udviklings- og Forenklingsstyrelsen",
+      "description": "",
+      "technologies": ["ETL", "SQL"]
+    },
+    {
+      "startYear": "2023",
+      "endYear": "2024",
+      "title": "System Specialist",
+      "company": "Intrum",
+      "description": "",
+      "technologies": ["MS SQL", "CMS"]
+    },
+    {
+      "startYear": "2024",
+      "endYear": "2025",
+      "title": "Full Stack Developer",
+      "company": "ScanSpan",
+      "description": "",
+      "technologies": ["Go", "Vue.js", "SQL"]
+    },
+    {
+      "startYear": "2025",
+      "endYear": "",
+      "title": "Full Stack Developer",
+      "company": "Rubberduck",
+      "description": "",
+      "technologies": ["React.js", ".NET", "Figma"]
+    }
+  ],
+  "about": {
+    "resume": {
+      "title": "This is what I have been doing"
+    },
+    "certificates": {
+      "title": "certificates",
+      "items": [
+        {
+          "name": "SQL",
+          "school": "Teknologisk Institut"
+        },
+        {
+          "name": "Data modeling",
+          "school": "Teknologisk Institut"
+        },
+        {
+          "name": "Java Masterclass",
+          "school": "Udemy"
+        }
+      ]
+    }
   }
 }

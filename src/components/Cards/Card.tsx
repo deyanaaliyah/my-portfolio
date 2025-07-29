@@ -10,7 +10,12 @@ export const Card: FC<ICard> = ({
 }: ICard) => {
   return (
     <div className={`Card ${className}`} style={{ background: background }}>
-      <div className={`Card__content ${hasPadding ? 'Card__content__padding' : ''}`}>{children}</div>
+      <div
+        className="Card__content"
+        style={{ padding: hasPadding ? "16px 0" : "" }}
+      >
+        {children}
+      </div>
     </div>
   );
 };
