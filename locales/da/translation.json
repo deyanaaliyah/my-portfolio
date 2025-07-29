@@ -25,7 +25,7 @@
       "cph": "Kbh",
       "hobbies": [
         {
-          "title": "AN",
+          "title": "Aviation",
           "description": "Min passion for aviation afspejler en forståelse for komplekse systemer, præcision og sikkerhed. Jeg forstår vigtigheden af struktur — og hvornår regler ikke skal bøjes.",
           "icon": "Aviation"
         },
@@ -129,5 +129,97 @@
       "name": "Datamatiker",
       "school": "Københavns Erhvervakademi"
     }
+  },
+  "projects": {
+    "title": "Ting, jeg har bygget",
+    "callToAction": "Frisk på et collab?",
+    "projects": [
+      {
+        "title": "Tic Tac Toe",
+        "description": "Byggede et realtidsspil med .NET backend og React frontend. Implementerede SignalR for websockets, AI-modstander, og brugerhåndtering via API'er. Fokus var på læring af full-stack arkitektur og realtidskommunikation.",
+        "img": { "src": "", "alt": "" },
+        "technologies": [
+          ".NET",
+          "SignalR",
+          "CORS",
+          "API",
+          "AI",
+          "Hub",
+          "React"
+        ],
+        "year": 2025,
+        "isPersonalProject": true,
+        "path": "https://github.com/deyanaaliyah/TicTacToe"
+      },
+      {
+        "title": "URL Shortener",
+        "description": "Skabte en simpel, men effektiv URL forkorter med Go backend og React frontend. Brugte GIN, GORM og CORS middleware. Implementerede API endpoints og UI med Axios og MUI.",
+        "img": { "src": "", "alt": "" },
+        "technologies": [
+          "Go",
+          "GIN",
+          "Gorm",
+          "CORS",
+          "API",
+          "React",
+          "MUI",
+          "Axios"
+        ],
+        "year": 2025,
+        "isPersonalProject": true,
+        "path": "https://github.com/deyanaaliyah/url-shortener"
+      },
+      {
+        "title": "Rubberduck",
+        "description": "Arbejder på både frontend og backend af et internt admin-dashboard. Anvender React, Redux og TypeScript med komponentbibliotek i Storybook. Integrerer med headless CMS og håndterer internationalisering (i18n), autentificering og lokal lagring.",
+        "img": { "src": "", "alt": "" },
+        "technologies": [
+          "TypeScript",
+          "Monorepo",
+          "Headless CMS",
+          "Cypress",
+          "React",
+          "Redux",
+          "Vite",
+          "SCSS",
+          "Axios",
+          "i18n",
+          "storybook",
+          "Hooks",
+          "Thunks"
+        ],
+        "year": 2025,
+        "path": "https://www.rubberduck.dk/"
+      },
+      {
+        "title": "Tempustally",
+        "description": "Udviklede en professionel tidsregistreringsapp fra bunden i Spanien🇪🇸. Backend i Go med JWT-autentificering, REST API, middleware og SQL. Frontend i Vue med Axios og responsivt UI. Leverede en stabil MVP til brug i virksomheden.",
+        "img": { "src": "", "alt": "" },
+        "technologies": [
+          "Go",
+          "GIN",
+          "Gorm",
+          "CORS",
+          "RestAPI",
+          "JWT Authentication",
+          "Middleware",
+          "SQL",
+          "Vue",
+          "Vite",
+          "Axios"
+        ],
+        "year": 2024,
+        "path": "https://tempustally.dk/"
+      },
+      {
+        "title": "Bilvask",
+        "description": "Udviklede en iOS-app i Swift med Firebase-integration til en bilplejevirksomhed. Appen blev lavet til intern brug og håndterede bookinger, kontaktinformation og oversigt over ydelser. Fokus var på funktionalitet og brugervenligt interface via UIKit.",
+        "img": { "src": "", "alt": "" },
+        "technologies": ["iOS", "Swift", "UIKit", "Xcode", "Firebase"],
+        "year": 2019,
+        "isPersonalProject": true,
+        "path": "https://github.com/deyanaaliyah/Bilpleje"
+      }
+    ]
   }
 }
