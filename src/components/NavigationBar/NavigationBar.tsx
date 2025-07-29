@@ -11,7 +11,7 @@ export const NavigationBar = () => {
   const [isModalVisible, setModal] = useState(false);
   const [isBouncing, setIsBouncing] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-  const navItems = useLocalizedItems("navigation");
+  const navItems = useLocalizedItems<INavigationItem>("navigation");
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -55,7 +55,7 @@ export const NavigationBar = () => {
 
         {(!isMobile || isMenuVisible) && (
           <ul className="NavigationBar__ul">
-            {navItems.map((item: INavigationItem, index: number) => (
+            {navItems.map((item, index) => (
               <Link to={item.route} key={index}>
                 <li className="NavigationBar__ul__li">{item.title}</li>
               </Link>
