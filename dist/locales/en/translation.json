@@ -129,5 +129,97 @@
       "name": "AP in Computer Science",
       "school": "Copenhagen School of Design and Technology"
     }
+  },
+  "projects": {
+    "title": "Stuff I've built so far",
+    "callToAction": "Wanna collab?",
+    "projects": [
+      {
+        "title": "Tic Tac Toe",
+        "description": "Built a real-time multiplayer Tic Tac Toe game with a .NET backend and React frontend. Implemented SignalR for websockets, AI opponent logic, and custom API endpoints. Focused on learning full-stack architecture and real-time communication.",
+        "img": { "src": "", "alt": "" },
+        "technologies": [
+          ".NET",
+          "SignalR",
+          "CORS",
+          "API",
+          "AI",
+          "Hub",
+          "React"
+        ],
+        "year": 2025,
+        "isPersonalProject": true,
+        "path": "https://github.com/deyanaaliyah/TicTacToe"
+      },
+      {
+        "title": "URL Shortener",
+        "description": "Created a minimal and efficient URL shortener with a Go backend and React frontend. Used GIN, GORM, and CORS middleware. Built API endpoints and a responsive UI using Axios and MUI.",
+        "img": { "src": "", "alt": "" },
+        "technologies": [
+          "Go",
+          "GIN",
+          "Gorm",
+          "CORS",
+          "API",
+          "React",
+          "MUI",
+          "Axios"
+        ],
+        "year": 2025,
+        "isPersonalProject": true,
+        "path": "https://github.com/deyanaaliyah/url-shortener"
+      },
+      {
+        "title": "Rubberduck",
+        "description": "Working on both frontend and backend for an internal admin dashboard. Using React, Redux, and TypeScript with a component library in Storybook. Integrated a headless CMS, implemented i18n, authentication, and local storage solutions.",
+        "img": { "src": "", "alt": "" },
+        "technologies": [
+          "TypeScript",
+          "Monorepo",
+          "Headless CMS",
+          "Cypress",
+          "React",
+          "Redux",
+          "Vite",
+          "SCSS",
+          "Axios",
+          "i18n",
+          "storybook",
+          "Hooks",
+          "Thunks"
+        ],
+        "year": 2025,
+        "path": "https://www.rubberduck.dk/"
+      },
+      {
+        "title": "Tempustally",
+        "description": "Developed a professional time-tracking app from scratch for a Spanish consulting firm. Backend in Go with JWT authentication, REST API, middleware, and SQL. Frontend built in Vue with Axios and a responsive UI. Delivered a stable MVP used internally.",
+        "img": { "src": "", "alt": "" },
+        "technologies": [
+          "Go",
+          "GIN",
+          "Gorm",
+          "CORS",
+          "RestAPI",
+          "JWT Authentication",
+          "Middleware",
+          "SQL",
+          "Vue",
+          "Vite",
+          "Axios"
+        ],
+        "year": 2024,
+        "path": "https://tempustally.dk/"
+      },
+      {
+        "title": "Bilvask",
+        "description": "Developed an iOS app using Swift and Firebase for a car detailing company. The app was built for internal use and handled bookings, contact info, and service overview. Focused on delivering a functional and user-friendly interface using UIKit.",
+        "img": { "src": "", "alt": "" },
+        "technologies": ["iOS", "Swift", "UIKit", "Xcode", "Firebase"],
+        "year": 2019,
+        "isPersonalProject": true,
+        "path": "https://github.com/deyanaaliyah/Bilpleje"
+      }
+    ]
   }
 }
