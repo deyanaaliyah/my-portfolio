@@ -9,21 +9,48 @@ import {
   Guide,
 } from "../../components/Labels";
 import { useLocalizedItems } from "../../hooks";
+import { useEffect, useRef } from "react";
 
 export const About = () => {
+  const moveRef = useRef<HTMLDivElement | null>(null);
   const { t } = useTranslation();
   const certificates = useLocalizedItems<ICertificate>(
     "about.certificates.items"
   );
-  console.log("CERTIFICATES: ", certificates);
 
   const jobs = useLocalizedItems<IJob>("jobs");
   const sortedJobs = [...jobs].sort((a, b) => {
     return parseInt(b.startYear) - parseInt(a.startYear);
   });
 
+  useEffect(() => {
+    const move = moveRef.current;
+
+    const handlePointerMove = (event: PointerEvent) => {
+      if (!move) return;
+
+      const { clientX, clientY } = event;
+
+      move.style.height = "44px";
+      move.animate(
+        {
+          left: `${clientX}px`,
+          top: `${clientY}px`,
+        },
+        { duration: 1000, fill: "forwards" }
+      );
+    };
+
+    document.body.addEventListener("pointermove", handlePointerMove);
+
+    return () => {
+      document.body.removeEventListener("pointermove", handlePointerMove);
+    };
+  }, []);
+
   return (
     <>
+      <div className="Cursor" ref={moveRef}></div>
       <div className="About">
         <div className="About__container">
           <div className="About__container__div1">

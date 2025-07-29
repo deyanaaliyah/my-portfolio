@@ -6,7 +6,7 @@ export const Guide = () => {
       <div className="Guide__container">
         <div className="Guide__title">
           <p>
-            <span>AP Computer in Science</span>
+            <span>Resume</span>
             <span>
               <svg
                 width="19px"
@@ -22,7 +22,7 @@ export const Guide = () => {
           </p>
         </div>
         <div className="Guide__content">
-          <p>VIA KEA</p>
+          <p>Via Github.IO</p>
           <p>ELEV. 4,580</p>
         </div>
       </div>

@@ -29,6 +29,7 @@
         grid-column-start: 3;
         grid-row-start: 2;
         height: 300px;
+        width: 200px;
       }
 
       &__div4 {
@@ -76,6 +77,7 @@
   &__resume {
     width: auto;
     margin: auto;
+    z-index: 0;
 
     &__h2 {
       font-family: "Space Grotesk", sans-serif;
@@ -91,8 +93,11 @@
       padding: 16px 0;
       border-radius: 20px;
 
-      &:hover {
-        @include glass();
+      @media (min-width: $tablet_vertical) {
+        &:hover {
+          @include glass();
+          cursor: default;
+        }
       }
 
       &__jobContainer {
@@ -124,17 +129,21 @@
 
       &__company {
         font-family: "Space Grotesk", sans-serif;
+        font-weight: 800;
         text-align: center;
         line-height: 22px;
         padding: 0;
         opacity: 0.5;
       }
 
-      &:hover &__company {
-        opacity: 1;
+      @media (min-width: $tablet_vertical) {
+        &:hover &__company {
+          opacity: 1;
+        }
       }
 
       &__technology {
+        font-weight: 100;
         opacity: 1;
         display: flex;
         flex-wrap: wrap;
@@ -250,5 +259,17 @@
         font-size: 37px;
       }
     }
+  }
+}
+
+.Cursor {
+  @media (min-width: $tablet_vertical) {
+    @include glass();
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 1;
   }
 }

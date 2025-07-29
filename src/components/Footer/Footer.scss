@@ -4,6 +4,7 @@
   background: $charcoal;
   padding: 16px 0;
   width: 100vw;
+  z-index: 10;
 
   &__logo {
     @include content;
@@ -24,16 +25,17 @@
 
     & a {
       @include text-primary-text;
-      font-family: "Roboto Slab", serif;
+      font-family: "Space Grotesk", sans-serif;
       font-size: 13px;
-      font-weight: 400;
+      font-weight: 200;
       color: $grey;
       display: block;
     }
 
     & p {
       font-family: "Abril Fatface", serif;
-      font-size: 17px;
+      font-size: 18px;
+      letter-spacing: 0.6px;
       color: $grey;
       margin: 0;
     }
@@ -63,7 +65,8 @@
     & a {
       @include text-no-decoration;
       @include text-primary-small-text;
-      font-family: "Futura";
+      font-family: "Space Grotesk", sans-serif;
+      text-transform: lowercase;
       font-weight: 500;
       line-height: 20px;
       height: 20px;

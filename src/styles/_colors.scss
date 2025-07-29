@@ -27,7 +27,7 @@ $creme: #f9eddf;
 }
 
 [data-theme="light"] {
-  background: $white;
+  background: $creme;
   color: $black;
   transition: all 0.8s ease;
   --default: #{$black};
@@ -48,7 +48,7 @@ $creme: #f9eddf;
     inset 0 1px 1px rgba(255, 255, 255, 0.3),
     inset 0 -1px 1px rgba(255, 255, 255, 0.05),
     inset 0 0 8px rgba(255, 255, 255, 0.08);
-
+  overflow: clip;
   transition: all 0.4s ease;
 
   &::after {

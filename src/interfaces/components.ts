@@ -57,6 +57,7 @@ export interface IImage {
 export interface IColor {
   color?:
     | "default"
+    | "var(--white)"
     | "charcoal"
     | "black"
     | "white"
@@ -101,4 +102,15 @@ export interface ICertificate {
 // === i18n ===
 export interface ILanguage {
   t: (key: string) => string;
+}
+
+// === Projects ===
+export interface IProject {
+  title: string;
+  description: string;
+  img?: IImage;
+  technologies?: string[];
+  year: number;
+  path?: string;
+  isPersonalProject?: boolean;
 }

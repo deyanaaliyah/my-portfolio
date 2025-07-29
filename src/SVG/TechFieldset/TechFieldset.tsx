@@ -65,12 +65,12 @@ export const TechFieldset = () => {
       </div>
 
       <div className="TechFieldset__image-container">
-        <Globe color="grey" className="TechFieldset__svg" />
+        <Globe color="grey" className="TechFieldset__svg TechFieldset__svg__globe" />
         <div className="TechFieldset__text">
           <div className="TechFieldset__text-wrapper">
-            <Deyan color="white" />
-            <Deyan color="white" />
-            <Deyan color="white" />
+            <Deyan color="var(--white)" />
+            <Deyan color="var(--white)" />
+            <Deyan color="var(--white)" />
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 .Card {
   border-radius: 8px;
   min-height: 200px;
-  margin-bottom: 16px;
+  height: fit-content;
   overflow: hidden;
 
   &__content {

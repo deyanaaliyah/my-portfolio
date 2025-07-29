@@ -78,7 +78,7 @@ export const Hike = ({ color = "default", className = "" }: IColor) => {
             id="Path_1733"
             data-name="Path 1733"
             d="M1019.05,174.52H919.682a8,8,0,0,1-8-8V139.429a2,2,0,0,1,2-2H1025.05a2,2,0,0,1,2,2V166.52A8,8,0,0,1,1019.05,174.52Z"
-            fill="#ffffff"
+            fill={resolvedColor}
             stroke={resolvedColor}
             strokeWidth="5"
           />
@@ -86,7 +86,7 @@ export const Hike = ({ color = "default", className = "" }: IColor) => {
             id="Path_1734"
             data-name="Path 1734"
             d="M943.542,183.062h-7.671a2,2,0,0,1-2-2V95.932h11.671v85.13A2,2,0,0,1,943.542,183.062Z"
-            fill="#ffffff"
+            fill={resolvedColor}
             stroke={resolvedColor}
             strokeWidth="5"
           />
@@ -94,7 +94,7 @@ export const Hike = ({ color = "default", className = "" }: IColor) => {
             id="Path_1735"
             data-name="Path 1735"
             d="M1002.86,183.062h-7.671a2,2,0,0,1-2-2V95.932h11.671v85.13A2,2,0,0,1,1002.86,183.062Z"
-            fill="#ffffff"
+            fill={resolvedColor}
             stroke={resolvedColor}
             strokeWidth="5"
           />
@@ -110,7 +110,7 @@ export const Hike = ({ color = "default", className = "" }: IColor) => {
             id="Path_1737"
             data-name="Path 1737"
             d="M947.1,190.562H932.309a2,2,0,0,1-2-2v-8.75a2,2,0,0,1,2-2H947.1a2,2,0,0,1,2,2v8.75A2,2,0,0,1,947.1,190.562Z"
-            fill="#ffffff"
+            fill={resolvedColor}
             stroke={resolvedColor}
             strokeWidth="5"
           />
@@ -118,7 +118,7 @@ export const Hike = ({ color = "default", className = "" }: IColor) => {
             id="Path_1738"
             data-name="Path 1738"
             d="M1006.42,190.562H991.625a2,2,0,0,1-2-2v-8.75a2,2,0,0,1,2-2h14.795a2,2,0,0,1,2,2v8.75A2,2,0,0,1,1006.42,190.562Z"
-            fill="#ffffff"
+            fill={resolvedColor}
             stroke={resolvedColor}
             strokeWidth="5"
           />
@@ -126,7 +126,7 @@ export const Hike = ({ color = "default", className = "" }: IColor) => {
             id="Path_1739"
             data-name="Path 1739"
             d="M947.1,160.15H932.309a2,2,0,0,1-2-2V153.8a2,2,0,0,1,2-2H947.1a2,2,0,0,1,2,2v4.352A2,2,0,0,1,947.1,160.15Z"
-            fill="#ffffff"
+            fill={resolvedColor}
             stroke={resolvedColor}
             strokeWidth="5"
           />
@@ -134,7 +134,7 @@ export const Hike = ({ color = "default", className = "" }: IColor) => {
             id="Path_1740"
             data-name="Path 1740"
             d="M1006.42,160.15H991.625a2,2,0,0,1-2-2V153.8a2,2,0,0,1,2-2h14.795a2,2,0,0,1,2,2v4.352A2,2,0,0,1,1006.42,160.15Z"
-            fill="#ffffff"
+            fill={resolvedColor}
             stroke={resolvedColor}
             strokeWidth="5"
           />
