@@ -23,11 +23,7 @@
     &__title {
       margin: 0;
       line-height: 120%;
-      font-size: 54px;
-
-      @media (min-width: $tablet_vertical) {
-        font-size: 7cqmin;
-      }
+      font-size: 55px;
     }
 
     .Card {
@@ -62,31 +58,44 @@
   }
 
   &__div4 {
-    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-row-start: 2;
 
     @media (min-width: $tablet_vertical) {
-      grid-column: span 2 / span 2;
-      grid-column-start: 1;
-      grid-row-start: 2;
+      grid-column: span 4 / span 4;
+
+      &__description {
+        height: unset !important;
+      }
     }
   }
 
   &__div5 {
-    grid-row-start: 5;
+    grid-row-start: 3;
 
     @media (min-width: $tablet_vertical) {
       grid-column: span 2 / span 2;
-      grid-column-start: 3;
-      grid-row-start: 2;
+      grid-column-start: 1;
+      grid-row-start: 3;
     }
   }
 
   &__div6 {
-    grid-row-start: 6;
+    grid-row-start: 3;
+
+    @media (min-width: $tablet_vertical) {
+      grid-column: span 2 / span 2;
+      grid-column-start: 3;
+      grid-row-start: 3;
+    }
+  }
+
+  &__div7 {
+    grid-row-start: 4;
 
     @media (min-width: $tablet_vertical) {
       grid-column: span 1 / span 1;
-      grid-row-start: 3;
+      grid-row-start: 4;
 
       &__description {
         display: none;
@@ -94,20 +103,10 @@
     }
   }
 
-  &__div7 {
-    grid-row-start: 6;
-
-    @media (min-width: $tablet_vertical) {
-      grid-column: span 3 / span 3;
-      grid-column-start: 2;
-      grid-row-start: 3;
-    }
-  }
-
   &__div8 {
     text-align: center;
     grid-column: span 2 / span 2;
-    grid-row-start: 7;
+    grid-row-start: 4;
 
     &__title {
       font-size: 50px;
@@ -121,7 +120,7 @@
   }
 
   // === Cards ===
-  @for $i from 2 through 7 {
+  @for $i from 2 through 9 {
     &__div#{$i} {
       @include glass();
       border-radius: 48px;
@@ -154,14 +153,19 @@
 
   &__card2 .Card__content,
   &__card3 .Card__content,
-  &__card6 .Card__content {
+  &__card7 .Card__content {
     padding: 0 24px;
   }
 
-  &__div7__title {
-    line-height: 100%;
-    margin: auto;
-    text-align: center;
+  &__div2,
+  &__div3,
+  &__div7,
+  &__div8 {
+    &__title {
+      line-height: 100%;
+      margin: auto;
+      text-align: center;
+    }
   }
 
   &__technologies {
@@ -212,7 +216,6 @@
       opacity: 0.5;
 
       &__none {
-        
         @media (min-width: $tablet-vertical) {
           display: none;
         }

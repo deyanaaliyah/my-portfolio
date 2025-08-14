@@ -170,6 +170,20 @@
         "path": "https://github.com/deyanaaliyah/url-shortener"
       },
       {
+        "title": "Kamera Overvågning",
+        "isPersonalProject": true,
+        "description": "Dette program er en simpel Flask-baseret webserver, der kan streame live video fra tilgængelige kameraer og automatisk optage video ved motion-detection.",
+        "img": { "src": "", "alt": "" },
+        "technologies": [
+          "Flask",
+          "OpenCV",
+          "Motion detection",
+          "User Agent authentication"
+        ],
+        "year": 2025,
+        "path": "https://github.com/deyanaaliyah/camera-surveillance"
+      },
+      {
         "title": "Rubberduck",
         "description": "Arbejder på både frontend og backend af et internt admin-dashboard. Anvender React, Redux og TypeScript med komponentbibliotek i Storybook. Integrerer med headless CMS og håndterer internationalisering (i18n), autentificering og lokal lagring.",
         "img": { "src": "", "alt": "" },

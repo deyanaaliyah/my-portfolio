@@ -170,6 +170,20 @@
         "path": "https://github.com/deyanaaliyah/url-shortener"
       },
       {
+        "title": "Camera Surveillance",
+        "isPersonalProject": true,
+        "description": "This program is a simple Flask-based web server that streams live video from available cameras and automatically records video when motion is detected.",
+        "img": { "src": "", "alt": "" },
+        "technologies": [
+          "Flask",
+          "OpenCV",
+          "Motion detection",
+          "User Agent authentication"
+        ],
+        "year": 2025,
+        "path": "https://github.com/deyanaaliyah/camera-surveillance"
+      },
+      {
         "title": "Rubberduck",
         "description": "Working on both frontend and backend for an internal admin dashboard. Using React, Redux, and TypeScript with a component library in Storybook. Integrated a headless CMS, implemented i18n, authentication, and local storage solutions.",
         "img": { "src": "", "alt": "" },

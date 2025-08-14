@@ -81,7 +81,7 @@
 
     &__h2 {
       font-family: "Space Grotesk", sans-serif;
-      font-size: 93px;
+      font-size: 9cqmin;
       text-transform: lowercase;
       border-bottom: 3px solid var(--creme);
     }
@@ -239,7 +239,7 @@
       line-height: 120%;
       text-align: left;
       margin: 0;
-      height: 115px;
+      min-height: 115px;
 
       @media (max-width: $tablet_vertical) {
         font-size: 37px;
@@ -253,7 +253,6 @@
       margin: auto;
       text-align: right;
       align-content: end;
-      height: 115px;
 
       @media (max-width: $tablet_vertical) {
         font-size: 37px;

@@ -57,10 +57,10 @@ export const Projects = () => {
         </div>
       ))}
 
-      <div className="Projects__div7">
+      <div className="Projects__div8">
         <Link to="https://github.com/deyanaaliyah">
-          <Card className="Projects__card7">
-            <p className="Projects__div7__title">
+          <Card className="Projects__card8">
+            <p className="Projects__div8__title">
               {t("projects.callToAction")}
             </p>
           </Card>
