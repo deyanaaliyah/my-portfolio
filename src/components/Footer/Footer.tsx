@@ -48,7 +48,7 @@ export const Footer = () => {
     <div className="Footer">
       <div className="Footer__connect">
         <p>Connect</p>
-        <a href="https://www.linkedin.com/in/dejan-alija/">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/dejan1/">LinkedIn</a>
         <a href="https://github.com/deyanaaliyah">Github</a>
       </div>
       <div className="Footer__logo">

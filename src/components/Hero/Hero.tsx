@@ -15,7 +15,7 @@ export const Hero = ({ t }: HeroProps) => {
 
         <div className="Hero__stack">
           <div className="Hero__stack__linkedInLink">
-            <Link to="https://www.linkedin.com/in/dejan-alija">LinkedIn</Link>
+            <Link to="https://www.linkedin.com/in/dejan1/">LinkedIn</Link>
           </div>
           <div className="Hero__stackList">
             <p className="Hero__stackList__stackItem">Stack</p>
