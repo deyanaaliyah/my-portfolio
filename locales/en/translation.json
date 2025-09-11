@@ -157,7 +157,7 @@
       {
         "title": "Camera Surveillance",
         "isPersonalProject": true,
-        "description": "This program is a simple Flask-based web server that streams live video from available cameras and automatically records video when motion is detected.",
+        "description": "A simple Flask-based web server that streams live video from available cameras and automatically records video when motion is detected.",
         "img": { "src": "", "alt": "" },
         "technologies": [
           "Flask",
@@ -170,7 +170,7 @@
       },
       {
         "title": "Rubberduck",
-        "description": "Working on both frontend and backend for an internal admin dashboard. Using React, Redux, and TypeScript with a component library in Storybook. Integrated a headless CMS, implemented i18n, authentication, and local storage solutions.",
+        "description": "Built a cool auto-rendering component that consumes JSON data from a headless CMS using React with a component library in Storybook. Integrated i18n, authentication, and local storage solutions.",
         "img": { "src": "", "alt": "" },
         "technologies": [
           "TypeScript",
