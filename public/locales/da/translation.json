@@ -157,7 +157,7 @@
       {
         "title": "Kamera Overvågning",
         "isPersonalProject": true,
-        "description": "Dette program er en simpel Flask-baseret webserver, der kan streame live video fra tilgængelige kameraer og automatisk optage video ved motion-detection.",
+        "description": "En simpel Flask-baseret webserver, der kan streame live video fra tilgængelige kameraer og automatisk optage video ved motion-detection",
         "img": { "src": "", "alt": "" },
         "technologies": [
           "Flask",
@@ -170,7 +170,7 @@
       },
       {
         "title": "Rubberduck",
-        "description": "Arbejder på både frontend og backend af et internt admin-dashboard. Anvender React, Redux og TypeScript med komponentbibliotek i Storybook. Integrerer med headless CMS og håndterer internationalisering (i18n), autentificering og lokal lagring.",
+        "description": "Udviklede et cool auto-rendering komponent, der modtager JSON-data fra et headless CMS ved hjælp af React og et komponentbibliotek i Storybook. Integrerede i18n, autentificering og løsninger til lokal lagring.",
         "img": { "src": "", "alt": "" },
         "technologies": [
           "TypeScript",
