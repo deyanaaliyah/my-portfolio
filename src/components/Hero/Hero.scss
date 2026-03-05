@@ -17,7 +17,7 @@
     text-align: center;
     color: $creme;
     background: $red;
-    border-radius: 15px;
+    border-radius: $border-radius;
     padding: 64px 16px;
     margin: 0 auto 32px auto;
     box-shadow: rgba(143, 0, 0, 0.3) 0 0 10px 10px inset;
@@ -66,6 +66,10 @@
         transform: skewX(-30deg) rotate(-7deg);
         border: 2.5px solid $watermelon;
         padding: 8px;
+      }
+
+      & a:hover {
+        filter: drop-shadow(0 0 3px $watermelon);
       }
     }
   }

@@ -9,19 +9,22 @@ import {
   Guide,
 } from "../../components/Labels";
 import { useLocalizedItems } from "../../hooks";
-import { useEffect, useRef } from "react";
+import { useEffect, useMemo, useRef } from "react";
 
 export const About = () => {
   const moveRef = useRef<HTMLDivElement | null>(null);
   const { t } = useTranslation();
   const certificates = useLocalizedItems<ICertificate>(
-    "about.certificates.items"
+    "about.certificates.items",
   );
 
   const jobs = useLocalizedItems<IJob>("jobs");
-  const sortedJobs = [...jobs].sort((a, b) => {
-    return parseInt(b.startYear) - parseInt(a.startYear);
-  });
+  const sortedJobs = useMemo(() => {
+    const getJobDate = (job: IJob) =>
+      (job.endYear ?? job.startYear) * 12 + (job.endMonth ?? job.startMonth);
+
+    return [...jobs].sort((a, b) => getJobDate(b) - getJobDate(a));
+  }, [jobs]);
 
   useEffect(() => {
     const move = moveRef.current;
@@ -37,7 +40,7 @@ export const About = () => {
           left: `${clientX}px`,
           top: `${clientY}px`,
         },
-        { duration: 1000, fill: "forwards" }
+        { duration: 1000, fill: "forwards" },
       );
     };
 
@@ -83,17 +86,16 @@ export const About = () => {
         </h2>
         <div style={{ background: "var(--about-creme)" }}>
           <div id="" className="About__resume About__content">
-            {sortedJobs.map((item, index) => (
-              <div key={index} className="About__resume__item">
+            {sortedJobs.map((item) => (
+              <div key={`${item.company}-${item.startYear}-${item.startMonth}`} className="About__resume__item">
                 <p className="About__resume__item__year">{item.startYear}</p>
                 <div className="About__resume__item__jobContainer">
                   <h2 className="About__resume__item__title">{item.title}</h2>
-                  <small className="About__resume__item__company" key={index}>
+                  <small className="About__resume__item__company">
                     {item.company}
                     <div>
                       <p
                         className="About__resume__item__technology"
-                        key={index}
                       >
                         {item.technologies.map((item, index) => (
                           <span key={index}>{item}</span>

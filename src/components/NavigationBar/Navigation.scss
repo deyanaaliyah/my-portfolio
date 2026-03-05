@@ -95,7 +95,7 @@
 
 @media (max-width: $tablet-vertical) {
   .NavigationBar {
-    border-radius: 31px;
+    border-radius: $border-radius;
     cursor: pointer;
 
     &__ul {
