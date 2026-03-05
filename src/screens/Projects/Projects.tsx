@@ -57,7 +57,7 @@ export const Projects = () => {
         </div>
       ))}
 
-      <div className="Projects__div8">
+      <div className="Projects__div9">
         <Link to="https://github.com/deyanaaliyah">
           <Card className="Projects__card8">
             <p className="Projects__div8__title">

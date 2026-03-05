@@ -12,11 +12,12 @@
   @media (min-width: $tablet_vertical) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
   }
 
-  &__div1 {
+  &__div1 {   
     @media (min-width: $tablet_vertical) {
+      align-content: end;
       grid-column: span 2 / span 2;
     }
 
@@ -28,6 +29,7 @@
 
     .Card {
       min-height: unset;
+      margin: 0;
     }
   }
 
@@ -91,10 +93,10 @@
   }
 
   &__div7 {
-    grid-row-start: 4;
+    grid-row-start: 1;
 
     @media (min-width: $tablet_vertical) {
-      grid-column: span 1 / span 1;
+      grid-column: span 3 / span 1;
       grid-row-start: 4;
 
       &__description {
@@ -104,9 +106,21 @@
   }
 
   &__div8 {
+    grid-row-start: 4;
+
+    @media (min-width: $tablet_vertical) {
+      grid-row-start: unset;
+
+      &__description {
+        display: none;
+      }
+    }
+  }
+
+  &__div9 {
     text-align: center;
     grid-column: span 2 / span 2;
-    grid-row-start: 4;
+    grid-row-start: 5;
 
     &__title {
       font-size: 50px;
@@ -115,7 +129,7 @@
 
     @media (min-width: $tablet_vertical) {
       grid-column: span 4 / span 4;
-      grid-row-start: 4;
+      grid-row-start: 5;
     }
   }
 
@@ -123,7 +137,7 @@
   @for $i from 2 through 9 {
     &__div#{$i} {
       @include glass();
-      border-radius: 48px;
+      border-radius: $border-radius;
 
       &__title {
         font-family: "Space Grotesk", sans-serif;
@@ -140,6 +154,10 @@
           height: 180px;
         }
       }
+
+      &:hover {
+        filter: drop-shadow(0 0 0.3px var(--white));
+      }
     }
 
     &__card#{$i} .Card__content {
@@ -154,13 +172,14 @@
   &__card2 .Card__content,
   &__card3 .Card__content,
   &__card7 .Card__content {
-    padding: 0 24px;
+    padding: 24px;
   }
 
   &__div2,
   &__div3,
   &__div7,
-  &__div8 {
+  &__div8,
+  &__div9 {
     &__title {
       line-height: 100%;
       margin: auto;

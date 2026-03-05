@@ -84,8 +84,10 @@ export interface IHobby {
 
 // === RESUME ===
 export interface IJob {
-  startYear: string;
-  endYear?: string;
+  startYear: number;
+  endYear?: number;
+  startMonth: number;
+  endMonth?: number;
   title: string;
   company: string;
   description?: string;

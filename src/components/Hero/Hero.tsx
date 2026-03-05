@@ -6,8 +6,8 @@ interface HeroProps {
 }
 
 export const Hero = ({ t }: HeroProps) => {
-  const frontend = ["React", "Vue", "Vite", "SCSS"];
-  const backend = ["", "Go", "Swift", "SQL", ".NET"];
+  const frontend = ["", "React", "Vue", "Vite", "SCSS"];
+  const backend = ["C#", "Go", "Swift", "SQL"];
   return (
     <section className="Hero">
       <div className="Hero__content">
@@ -19,14 +19,14 @@ export const Hero = ({ t }: HeroProps) => {
           </div>
           <div className="Hero__stackList">
             <p className="Hero__stackList__stackItem">Stack</p>
-            {frontend.map((item) => (
+            {backend.map((item) => (
               <p key={item} className="Hero__stackList__stackItem">
                 {item}
               </p>
             ))}
           </div>
           <div className="Hero__stackList">
-            {backend.map((item, idx) =>
+            {frontend.map((item, idx) =>
               item ? (
                 <p key={item} className="Hero__stackList__stackItem">
                   {item}
