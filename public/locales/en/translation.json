@@ -49,8 +49,10 @@
   },
   "jobs": [
     {
-      "startYear": "2022",
-      "endYear": "2024",
+      "startYear": 2022,
+      "endYear": 2024,
+      "startMonth": 1,
+      "endMonth": 1,
       "title": "Data Engineer",
       "company": "Udviklings- og Forenklingsstyrelsen",
       "description": "",
@@ -65,16 +67,20 @@
       ]
     },
     {
-      "startYear": "2024",
-      "endYear": "2024",
+      "startYear": 2024,
+      "endYear": 2024,
+      "startMonth": 2,
+      "endMonth": 12,
       "title": "Full Stack Developer",
       "company": "ScanSpan",
       "description": "",
       "technologies": ["Go", "Vue.js", "SQL", "JWT", "Gorm", "GIN", "Vite"]
     },
     {
-      "startYear": "2024",
-      "endYear": "",
+      "startYear": 2025,
+      "endYear": 2025,
+      "startMonth": 4,
+      "endMonth": 10,
       "title": "Full Stack Developer",
       "company": "Rubberduck",
       "description": "",
@@ -85,6 +91,25 @@
         "Vite",
         "Headless CMS",
         "Auto-rendering react components"
+      ]
+    },
+    {
+      "startYear": 2025,
+      "endYear": 2026,
+      "startMonth": 11,
+      "endMonth": 2,
+      "title": "Tech Lead",
+      "company": "Livia (startup)",
+      "description": "",
+      "technologies": [
+        "Go",
+        "Middlware",
+        "Figma",
+        "React",
+        "Vite",
+        "LLM",
+        "AI",
+        "AWS"
       ]
     }
   ],
@@ -155,21 +180,25 @@
         "path": "https://github.com/deyanaaliyah/url-shortener"
       },
       {
-        "title": "Camera Surveillance",
-        "isPersonalProject": true,
-        "description": "A simple Flask-based web server that streams live video from available cameras and automatically records video when motion is detected.",
+        "title": "Livia",
+        "description": "An OAuth2-based mail wrapper that allows users to send and receive emails through a simple web interface. Built on OpenAI to summarise, categorise, and prioritise the inbox, making it easy to keep track of important messages and tasks.",
         "img": { "src": "", "alt": "" },
         "technologies": [
-          "Flask",
-          "OpenCV",
-          "Motion detection",
-          "User Agent authentication"
+          "Go",
+          "Middleware",
+          "AWS",
+          "OAuth2",
+          "LLM",
+          "AI",
+          "React",
+          "Vite",
+          "shadcn"
         ],
-        "year": 2025,
-        "path": "https://github.com/deyanaaliyah/camera-surveillance"
+        "year": 2026,
+        "path": ""
       },
       {
-        "title": "Rubberduck",
+        "title": "Rubberduck.dk",
         "description": "Built a cool auto-rendering component that consumes JSON data from a headless CMS using React with a component library in Storybook. Integrated i18n, authentication, and local storage solutions.",
         "img": { "src": "", "alt": "" },
         "technologies": [
@@ -195,7 +224,9 @@
         "description": "Developed a professional time-tracking app from scratch for a Spanish consulting firm. Backend in Go with JWT authentication, REST API, middleware, and SQL. Frontend built in Vue with Axios and a responsive UI. Delivered a stable MVP used internally.",
         "img": { "src": "", "alt": "" },
         "technologies": [
+          "SaaS",
           "Go",
+          "Modular",
           "GIN",
           "Gorm",
           "CORS",
@@ -209,6 +240,20 @@
         ],
         "year": 2024,
         "path": "https://tempustally.dk/"
+      },
+      {
+        "title": "Camera Surveillance",
+        "isPersonalProject": true,
+        "description": "A simple Flask-based web server that streams live video from available cameras and automatically records video when motion is detected.",
+        "img": { "src": "", "alt": "" },
+        "technologies": [
+          "Flask",
+          "OpenCV",
+          "Motion detection",
+          "User Agent authentication"
+        ],
+        "year": 2025,
+        "path": "https://github.com/deyanaaliyah/camera-surveillance"
       },
       {
         "title": "Bilvask",
