@@ -73,8 +73,8 @@
       "technologies": ["Go", "Vue.js", "SQL", "JWT", "Gorm", "GIN", "Vite"]
     },
     {
-      "startYear": "2024",
-      "endYear": "",
+      "startYear": "2025",
+      "endYear": "2025",
       "title": "Full Stack Developer",
       "company": "Rubberduck",
       "description": "",
@@ -85,6 +85,23 @@
         "Vite",
         "Headless CMS",
         "Auto-rendering react components"
+      ]
+    },
+    {
+      "startYear": "2025",
+      "endYear": "2026",
+      "title": "Tech Lead",
+      "company": "Livia (startup)",
+      "description": "",
+      "technologies": [
+        "Go",
+        "Middlware",
+        "Figma",
+        "React",
+        "Vite",
+        "LLM",
+        "AI",
+        "AWS"
       ]
     }
   ],
@@ -155,21 +172,26 @@
         "path": "https://github.com/deyanaaliyah/url-shortener"
       },
       {
-        "title": "Kamera Overvågning",
-        "isPersonalProject": true,
-        "description": "En simpel Flask-baseret webserver, der kan streame live video fra tilgængelige kameraer og automatisk optage video ved motion-detection",
+        "title": "Livia",
+        "description": "Mail-wrapper baseret på OAuth2, der giver brugere mulighed for at sende og modtage e-mails gennem en simpel webgrænseflade. Bygget på OpenAI for at opsummere, kategorisere og prioritere indbakken, hvilket gør det nemt at holde styr på vigtige beskeder og opgaver.",
         "img": { "src": "", "alt": "" },
         "technologies": [
-          "Flask",
-          "OpenCV",
-          "Motion detection",
-          "User Agent authentication"
+          "SaaS",
+          "Go",
+          "Middleware",
+          "AWS",
+          "OAuth2",
+          "LLM",
+          "AI",
+          "React",
+          "Vite",
+          "shadcn"
         ],
-        "year": 2025,
-        "path": "https://github.com/deyanaaliyah/camera-surveillance"
+        "year": 2026,
+        "path": ""
       },
       {
-        "title": "Rubberduck",
+        "title": "Rubberduck.dk",
         "description": "Udviklede et cool auto-rendering komponent, der modtager JSON-data fra et headless CMS ved hjælp af React og et komponentbibliotek i Storybook. Integrerede i18n, autentificering og løsninger til lokal lagring.",
         "img": { "src": "", "alt": "" },
         "technologies": [
@@ -196,6 +218,7 @@
         "img": { "src": "", "alt": "" },
         "technologies": [
           "Go",
+          "Modular",
           "GIN",
           "Gorm",
           "CORS",
@@ -209,6 +232,20 @@
         ],
         "year": 2024,
         "path": "https://tempustally.dk/"
+      },
+      {
+        "title": "Kamera Overvågning",
+        "isPersonalProject": true,
+        "description": "En simpel Flask-baseret webserver, der kan streame live video fra tilgængelige kameraer og automatisk optage video ved motion-detection",
+        "img": { "src": "", "alt": "" },
+        "technologies": [
+          "Flask",
+          "OpenCV",
+          "Motion detection",
+          "User Agent authentication"
+        ],
+        "year": 2025,
+        "path": "https://github.com/deyanaaliyah/camera-surveillance"
       },
       {
         "title": "Bilvask",
